@@ -1,0 +1,172 @@
+@font-face{
+    font-family: "CaviarDreams";
+    src: url("../fonts/CaviarDreams.ttf");
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: "CaviarDreams";
+  }
+  #destacadas{
+    .info_inmueble{
+        display: flex;
+        list-style: none;
+        margin-left: -6%;
+        margin-right: -10%;
+      }
+      .container_li{
+        margin-right: 1.5em;
+    
+      }
+      span{
+        font-size: 18px;
+        
+      }
+      .codigo_inmueble{
+        position: absolute;
+        top: 1px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 1.5px;
+        background-color: #0b5998;
+        padding: 10px 30px 11px 30px;
+        margin-left: 0%;
+      }
+      .precio_inmueble{
+        position: absolute;
+    top: 226px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.5px;
+    background-color: #0b5998;
+    padding: 6px 46px 7px 45px;
+    margin-left: 58%;
+      }
+  }
+ #estadisticas{
+        background: url(../images/banner_estadisticas_home.png) no-repeat;
+        background-position: center;
+        position: relative;
+        color: #fff;
+
+        .banner_estadi:before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    
+ }
+#aseguradoras{
+    .menu{
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        margin-top: 13%;
+        font-weight: bold;
+        
+    }
+    .menu-item{
+    font-size: 0.9rem;
+    border-bottom: 1px solid #826a6173;
+    margin-bottom: 5%;
+    .option_foot{
+    font-size: 0.786em;
+    line-height: normal;
+    text-transform: uppercase;
+    color:black;
+    text-decoration:none;
+    
+      }
+      .option_foot:hover{
+          color:$color_azul_oscuro;
+      }
+    }
+}
+
+#inmobiliaria_historia{
+    margin-top: 2%;
+    .cont_img{
+        text-align: center;
+    }
+    img{
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+    }
+    p{
+        text-align: justify;
+    }
+    .footer_redes {
+        margin: 0;
+        
+        list-style-type: none;
+        display: flex;
+        text-align: center;
+         a{
+            font-size: 22px;
+            transition: 0.3s color ease-out;
+         }
+         .fa{
+            display: inline-block;
+            font: normal normal normal 14px;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+         }
+
+        li{
+          display: inline-block;
+          padding: 0 11px;
+        }
+        .color_face{
+          color: #0c50a7;
+        }
+        .color_insta{
+          color: #cf3c6d;
+        }
+        .color_youtu{
+          color: red;
+          
+    }
+  }
+   
+}
+#footer_copy{
+  .row{
+    justify-content: space-between;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+.subir {
+  display: none;
+  padding: 15px;
+  background-color: $color_azul_oscuro;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  -webkit-box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
+  -moz-box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
+  box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
+  z-index: 2;
+}
+   
+
+
+  

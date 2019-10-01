@@ -1,0 +1,14 @@
+#buscador{
+    position: relative;
+    background-color: #6c757d;
+    .btn{
+        background-color: $color_azul_oscuro;
+        color: white;
+        
+    }
+    button:hover{
+        background-color: $color_azul;
+    }
+    
+
+}
