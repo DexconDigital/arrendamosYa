@@ -91,7 +91,7 @@
                 <div class="col-md-9  cont_ficha">
                     <div class="row mb-5">
                         <div class="col-md-6 ">
-                            <a href=""><img src="images/no_image.png" alt=""></a>
+                            <a href="detalle_inmueble.php?"><img src="images/no_image.png" alt=""></a>
                         </div>
                         <div class="col-md-6 ">
 
@@ -158,19 +158,19 @@
                                             </div>
                                             <div class="listing__details">
                                                 <ul class="info_inmueble mt-3">
-                                                    <li class="container_li">
+                                                    <li class="">
                                                         <i class="fas fa-chart-area icono_inmueble mr-1"></i>
                                                         <span>113m</span>
                                                     </li>
-                                                    <li class="container_li">
+                                                    <li class="">
                                                         <i class="fas fa-bath icono_inmueble mr-1"></i>
                                                         <span>2</span>
                                                     </li>
-                                                    <li class="container_li">
+                                                    <li class="">
                                                         <i class="fa fa-bed icono_inmueble mr-1"></i>
                                                         <span>3</span>
                                                     </li>
-                                                    <li class="container_li">
+                                                    <li class="">
                                                         <i class="fa fa-car icono_inmueble mr-1"></i>
                                                         <span>1</span>
                                                     </li>

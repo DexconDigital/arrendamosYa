@@ -1,0 +1,74 @@
+#mapa_inmo{
+    margin-top: 7%;
+
+    iframe{
+        width: 100%;
+    }
+}
+#info_inmo{
+    margin-top: 3%;
+    .btn{
+        background-color: $color_azul_oscuro;
+        color: white;
+        
+    }
+    .color_poltica{
+        color:$color_azul_oscuro;
+    }
+    .color_poltica:hover{
+        color: $color_azul;;
+    }
+    li{
+        margin-bottom: 2%;
+    }
+    .color_face{
+        color: #0c50a7;
+        margin-left: 9px;
+    }
+    .color_insta{
+        color: #cf3c6d;
+        margin-left: 9px;
+    }
+    .color_youtu{
+       color: red;
+       margin-left: 9px;
+    }
+    .color_wapp {
+        color: rgb(21, 219, 21);
+    }
+    .color_ubi{
+          color: red;
+    }
+    .color_tel{
+           color: gray;
+    }
+    .color_cel{
+        color: $color_azul;
+    }
+    #info_list{
+    list-style: none;
+    padding-left: 0%;
+    }
+    .redes{
+            list-style: none;
+            padding-left: 71px;
+            
+            i{
+                border-radius: 0;
+                padding: 10px;
+                width: 40px;
+                height: 40px;
+                font-size: 140%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: $color_azul_oscuro;
+    }
+}

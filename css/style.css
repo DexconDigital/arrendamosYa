@@ -7815,6 +7815,14 @@ body {
   box-shadow: -2px 2px 5px 3px #bdbdbd;
   z-index: 2; }
 
+.color_gris {
+  background-color: #808184;
+  color: white; }
+
+.color_azul {
+  background-color: #0b5998;
+  color: white; }
+
 #buscador {
   position: relative;
   background-color: #6c757d; }
@@ -7906,5 +7914,209 @@ body {
     margin-left: 10%; }
     #cont_inmuebles .info_inmueble li {
       margin-right: 0.5em; }
+
+#cont_blog {
+  margin-top: 9%; }
+  #cont_blog .btn {
+    background-color: #0b5998;
+    color: white; }
+
+#mapa_inmo {
+  margin-top: 7%; }
+  #mapa_inmo iframe {
+    width: 100%; }
+
+#info_inmo {
+  margin-top: 3%; }
+  #info_inmo .btn {
+    background-color: #0b5998;
+    color: white; }
+  #info_inmo .color_poltica {
+    color: #0b5998; }
+  #info_inmo .color_poltica:hover {
+    color: #0087C9; }
+  #info_inmo li {
+    margin-bottom: 2%; }
+  #info_inmo .color_face {
+    color: #0c50a7;
+    margin-left: 9px; }
+  #info_inmo .color_insta {
+    color: #cf3c6d;
+    margin-left: 9px; }
+  #info_inmo .color_youtu {
+    color: red;
+    margin-left: 9px; }
+  #info_inmo .color_wapp {
+    color: #15db15; }
+  #info_inmo .color_ubi {
+    color: red; }
+  #info_inmo .color_tel {
+    color: gray; }
+  #info_inmo .color_cel {
+    color: #0087C9; }
+  #info_inmo #info_list {
+    list-style: none;
+    padding-left: 0%; }
+  #info_inmo .redes {
+    list-style: none;
+    padding-left: 71px; }
+    #info_inmo .redes i {
+      border-radius: 0;
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+      font-size: 140%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  #info_inmo a {
+    text-decoration: none;
+    color: black; }
+  #info_inmo a:hover {
+    color: #0b5998; }
+
+#inf_detalle {
+  margin-top: 7%; }
+  #inf_detalle .compartir {
+    position: absolute;
+    margin-left: 77%;
+    margin-top: -3%; }
+  #inf_detalle .conteedor_general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #inf_detalle .conteedor_general .cont_list {
+      display: flex;
+      align-items: center;
+      padding: 0%; }
+      #inf_detalle .conteedor_general .cont_list .cont_titulo {
+        margin-right: 0px;
+        padding-right: 0px;
+        list-style: none; }
+        #inf_detalle .conteedor_general .cont_list .cont_titulo .cont_titulo::after {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          content: "";
+          transform: translateY(-50%);
+          height: 80px;
+          width: 1px;
+          background-color: #000000; }
+        #inf_detalle .conteedor_general .cont_list .cont_titulo .codigo_style {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          margin-top: 4%; }
+          #inf_detalle .conteedor_general .cont_list .cont_titulo .codigo_style .color_codigo {
+            display: inline-block;
+            padding: 2px 18px;
+            margin-right: 15px;
+            border-radius: 4px;
+            background-color: #0087C9;
+            font-size: 10px;
+            color: #ffffff;
+            font-weight: 500;
+            text-transform: uppercase; }
+            #inf_detalle .conteedor_general .cont_list .cont_titulo .codigo_style .color_codigo .Titulo_principal {
+              margin-bottom: 8px;
+              font-size: 30px; }
+              #inf_detalle .conteedor_general .cont_list .cont_titulo .codigo_style .color_codigo .Titulo_principal .style_ubicacion {
+                color: #888888; }
+                #inf_detalle .conteedor_general .cont_list .cont_titulo .codigo_style .color_codigo .Titulo_principal .style_ubicacion .color_icono {
+                  margin-right: 5px;
+                  font-size: 16px; }
+      #inf_detalle .conteedor_general .cont_list .con_detalle_inform {
+        margin-right: 0px;
+        list-style: none; }
+        #inf_detalle .conteedor_general .cont_list .con_detalle_inform .lista_style {
+          margin-bottom: 0;
+          margin: 0;
+          padding: 0;
+          list-style-type: none; }
+        #inf_detalle .conteedor_general .cont_list .con_detalle_inform .info_inmueble {
+          display: flex;
+          list-style: none;
+          margin-left: 0%;
+          padding: 41px; }
+          #inf_detalle .conteedor_general .cont_list .con_detalle_inform .info_inmueble li {
+            margin-right: 0.5em; }
+      #inf_detalle .conteedor_general .cont_list .cont_precio {
+        padding-right: 0;
+        margin-right: 0;
+        list-style: none; }
+        #inf_detalle .conteedor_general .cont_list .cont_precio .precio_style {
+          margin-bottom: 2px;
+          color: #0b5998;
+          font-family: 'Roboto', Helvetica, Arial, sans-serif;
+          font-size: 24px;
+          font-weight: 700; }
+    #inf_detalle .conteedor_general .cont_compart {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      list-style: none;
+      margin-top: 6%;
+      margin-right: 2%; }
+      #inf_detalle .conteedor_general .cont_compart .tamaño_redes {
+        margin-right: 38px;
+        display: inline-block;
+        text-align: center; }
+        #inf_detalle .conteedor_general .cont_compart .tamaño_redes .cont_icon {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          text-decoration: none; }
+          #inf_detalle .conteedor_general .cont_compart .tamaño_redes .cont_icon .icono_style {
+            font-size: 15px;
+            width: 35px;
+            height: 35px;
+            margin-bottom: 9px;
+            border-radius: 50%;
+            background-color: #0087C9;
+            color: #ffffff;
+            line-height: 36px;
+            text-align: center; }
+
+.Lineas_separadora {
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 11px;
+  margin-bottom: 30px; }
+
+.cont_img {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.Inmuebles_similares {
+  margin-left: -1%; }
+
+.titulo_asesor {
+  margin-top: 8%; }
+
+.cont_caract {
+  margin-top: 2%; }
+
+.property {
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.property .property-image {
+  height: 205px;
+  overflow: hidden;
+  width: 100%; }
+
+.alto_img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  width: 100%; }
+
+.card {
+  border: 0px solid rgba(0, 0, 0, 0.125); }
+
+.margen_card {
+  margin-top: -4%; }
 
 /*# sourceMappingURL=style.css.map */

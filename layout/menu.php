@@ -30,11 +30,16 @@
                     <li class="nav-item <?php echo ($page == "Quienes Somos") ? "active" : ""; ?>">
                         <a class="nav-link" href="quienes_somos.php">Quienes Somos</a>
                     </li>
-                    <li class="nav-item <?php echo ($page == "Inmuebles" || $page == "Detalle inmueble") ? "active" : "" ?>">
+                    <li class="nav-item <?php echo ($page == "Inmuebles" || $page == "Detalle Inmueble") ? "active" : "" ?>">
                         <a class="nav-link" href="inmuebles.php?">Inmuebles</a>
                     </li>
-                    <li class="nav-item dropdown marge_li_nav">
-                        <a class="nav-link" href="inmuebles.php" href="">Transacciones en Línea</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Transacciones en Línea
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a target="_blank" class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=979&tipo=2">Arrendatarios</a>
+                            <a target="_blank" class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=979&tipo=1">Propietarios</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="" data-toggle="modal" data-target="#consigna">Consignar Inmueble</a>
