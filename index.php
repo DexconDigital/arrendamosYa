@@ -54,7 +54,7 @@
         </section>
 
         <section id="buscador">
-            <div class="container ">
+            <div class="container">
                 <div class="col-md-12 ">
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-12  form-group pr-md-0 p-3">
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-3 col-lg-3 form-group pr-md-0 p-3">
-                            <button class="btn btn-md btn-block " id='buscar' type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn btn-md btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                 <span> Búsqueda avanzada</span>
                             </button>
                         </div>
@@ -95,11 +95,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-4 col-lg-4 form-group pr-md-0">
-                            <button type="button" class="btn  btn-md btn-block " id='buscar'>
-                                <span>Buscar</span>
-                            </button>
-                        </div>
+
 
                         <div class="collapse col-12 row" id="collapseExample">
                             <div class="col-lg-4 col-md-6 col-12 form-group pr-md-0">
@@ -117,10 +113,16 @@
                             <div class="col-lg-6 col-md-6 col-12 form-group pr-md-0">
                                 <input type="text" class="form-control " id="area_maxima_buscar" placeholder=" Área Máxima">
                             </div>
+                            <div class="col-12 col-md-6 form-group pr-md-0">
+                            <button class="btn btn-md btn-block" type="button" data-toggle="collapse" id="buscar">
+                                <span> Búsqueda avanzada</span>
+                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
         </section>
 
@@ -433,9 +435,13 @@
     <!-- *******************Scripts********************* -->
     <?php include 'layout/archivosfooter.php' ?>
     <?php include 'layout/footer.php' ?>
+
     <!--  contador -->
+    <script src="conexion_api/buscador.js"></script>
+    <!--
     <script src="js/countUp.min.js"></script>
     <script src="js/counter-propertys.js"></script>
+-->
 </body>
 
 </html>

@@ -1,4 +1,7 @@
-<?php require 'variables/variables.php'; ?>
+<?php
+require 'variables/variables.php';
+require 'controllers/inmueblesController.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -22,6 +25,9 @@
         <?php include 'layout/menu.php' ?>
     </section>
 
+
+
+    <!-- **************************Contenido ********************************** -->
     <section id="cont_inmuebles">
         <div class="col-md-12 text-center mb-4">
             <h2><strong>Nuestra Oferta de Inmuebles</strong></h2>
@@ -89,112 +95,44 @@
                 </div>
 
                 <div class="col-md-9  cont_ficha">
-                    <div class="row mb-5">
-                        <div class="col-md-6 ">
-                            <a href="detalle_inmueble.php?"><img src="images/no_image.png" alt=""></a>
-                        </div>
-                        <div class="col-md-6 ">
 
-                            <div class="contenedor_ficha">
-                                <div class="imagen_stile">
-                                    <div class="cont_ficha">
-                                        <div class="espacio_ficha">
-                                            <div class="elemneto">
-                                                <div class="">
-                                                    <span class="texto">Código</span>
-                                                    <h3 class="texto2"><a>Tipo gestion / Inmueble</a></h3>
-                                                    <p class="texto3"> <i class="fas fa-map-marker-alt mr-2">
-                                                        </i><span class="ion-ios-location-outline listing__location-icon"></span>Ubicaión</p>
-                                                    <p class="texto4">$Precio</p>
-                                                </div>
-
-                                            </div>
-                                            <div class="listing__details">
-                                                <ul class="info_inmueble mt-3">
-                                                    <li class="container_li">
-                                                        <i class="fas fa-chart-area icono_inmueble mr-1"></i>
-                                                        <span>113m</span>
-                                                    </li>
-                                                    <li class="container_li">
-                                                        <i class="fas fa-bath icono_inmueble mr-1"></i>
-                                                        <span>2</span>
-                                                    </li>
-                                                    <li class="container_li">
-                                                        <i class="fa fa-bed icono_inmueble mr-1"></i>
-                                                        <span>3</span>
-                                                    </li>
-                                                    <li class="container_li">
-                                                        <i class="fa fa-car icono_inmueble mr-1"></i>
-                                                        <span>1</span>
-                                                    </li>
-                                                </ul>
-                                                <button type="button" class="btn rounded-0 col-12 botoon_inmueble waves-effect waves-light" id="buscar"><span>Ver más</span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-5">
-                        <div class="col-md-6 ">
-                            <a href=""><img src="images/no_image.png" alt=""></a>
-                        </div>
-                        <div class="col-md-6 ">
-
-                            <div class="contenedor_ficha">
-                                <div class="imagen_stile">
-                                    <div class="cont_ficha">
-                                        <div class="espacio_ficha">
-                                            <div class="elemneto">
-                                                <div class="">
-                                                    <span class="texto">Código</span>
-                                                    <h3 class="texto2"><a>Tipo gestion / Inmueble</a></h3>
-                                                    <p class="texto3"> <i class="fas fa-map-marker-alt mr-2">
-                                                        </i><span class="ion-ios-location-outline listing__location-icon"></span>Ubicaión</p>
-                                                    <p class="texto4">$Precio</p>
-                                                </div>
-
-                                            </div>
-                                            <div class="listing__details">
-                                                <ul class="info_inmueble mt-3">
-                                                    <li class="">
-                                                        <i class="fas fa-chart-area icono_inmueble mr-1"></i>
-                                                        <span>113m</span>
-                                                    </li>
-                                                    <li class="">
-                                                        <i class="fas fa-bath icono_inmueble mr-1"></i>
-                                                        <span>2</span>
-                                                    </li>
-                                                    <li class="">
-                                                        <i class="fa fa-bed icono_inmueble mr-1"></i>
-                                                        <span>3</span>
-                                                    </li>
-                                                    <li class="">
-                                                        <i class="fa fa-car icono_inmueble mr-1"></i>
-                                                        <span>1</span>
-                                                    </li>
-                                                </ul>
-                                                <button type="button" class="btn rounded-0 col-12 botoon_inmueble waves-effect waves-light" id="buscar"><span>Ver más</span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
+                    <!-- //listar Inmuebles -->
+                    <?php
+                    if (is_array($r)) {
+                        modelo_inmueble_listar($r['Inmuebles']);
+                    } else {
+                        echo '<h2 class="text-center" >No tiene Inmuebles</h2>';
+                    }
+                    ?>
                 </div>
-                
+                <div class="col-12 text-center">
+                    <?php if (is_array($r)) : ?>
+                        <ul class="pagination mt-4 align-items-end justify-content-center">
+                            <?php if ($paginator->getPrevUrl()) : ?>
+                                <li class="page-item"><a href="<?php echo $paginator->getPrevUrl(); ?>" class="page-link">&laquo; Atras</a></li>
+                            <?php endif; ?>
+                            <?php foreach ($paginator->getPages() as $page) : ?>
+                                <?php if ($page['url']) : ?>
+                                    <li <?php echo $page['isCurrent'] ? 'class="page-item active"' : ''; ?>>
+                                        <a href="<?php echo $page['url']; ?>" class="page-link"><?php echo $page['num']; ?></a>
+                                    </li>
+                                <?php else : ?>
+                                    <li class="page-item disabled"><span><?php echo $page['num']; ?></span></li>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+
+                            <?php if ($paginator->getNextUrl()) : ?>
+                                <li class="page-item"><a href="<?php echo $paginator->getNextUrl(); ?>" class="page-link">Siguiente &raquo;</a></li>
+                            <?php endif; ?>
+                        </ul>
+                    <?php endif; ?>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- **************************Contenido ********************************** -->
     <div class="container-fluid body cont_blog">
-
-
 
     </div>
 
@@ -204,9 +142,10 @@
     <!-- *******************Scripts********************* -->
     <?php include 'layout/archivosfooter.php' ?>
     <?php include 'layout/footer.php' ?>
+    <script src="conexion_api/buscador.js"></script>
     <!--  contador -->
 
-    <script src="js/counter-propertys.js"></script>
+
 </body>
 
 </html>
