@@ -101,7 +101,7 @@
                         </div>
                         <div class="col-xl-9 col-md-9 col-8">
                             <div class="col-xl-10 col-md-3 col-4 text-center ">
-                                <i class="fas fa-tags "></i>
+                                <i class="fas fa-tags"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['arrendamientos']['titulo'] ?></strong></h4>
@@ -155,7 +155,7 @@
                         </div>
                         <div class="col-xl-9 col-md-9 col-8">
                             <div class="col-xl-10 col-md-3 col-4 text-center ">
-                                <i class="fas fa-coins"></i>
+                                <i class="fas fa-user-tie"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['administracion']['titulo'] ?></strong></h4>
@@ -172,7 +172,7 @@
                         </div>
                         <div class="col-xl-9 col-md-9 col-8">
                             <div class="col-xl-12 col-md-3 col-4 text-center">
-                                <i class="fas fa-archway"></i>
+                                <i class="fas fa-hand-holding-usd"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['hipotecas']['titulo'] ?></strong></h4>
@@ -189,7 +189,7 @@
                         </div>
                         <div class="col-xl-9 col-md-9 col-8">
                             <div class="col-xl-12 col-md-3 col-4 text-center">
-                                <i class="fas fa-user-friends"></i>
+                                <i class="fas fa-gavel"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['asesoria_juridica']['titulo'] ?></strong></h4>
