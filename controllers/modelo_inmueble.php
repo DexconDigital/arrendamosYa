@@ -9,7 +9,7 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
         $imagen = existeImagen(($r[$i]['foto1']));
 
         // Eliminar el id de la inmobiliaria
-        $codigo = str_ireplace("971-", "", $r[$i]['Codigo_Inmueble']);
+        $codigo = str_ireplace("979-", "", $r[$i]['Codigo_Inmueble']);
 
         // a la variable "api" le asignamos el array con la iteraccion
         $api = $r[$i];
@@ -32,56 +32,43 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
 
         echo
             '
-            <div class="col-md-4">
-            <div class="card" style="width: 21rem;">
-                <img src="' . $imagen . '" class="card-img-top" alt="...">
-                <span class="precio_inmueble">' . $precio . '</span>
-                <div class="card-body">
-                    <div class="col-md-12 row">
-                        <div class="col-md-12">
-                            <p class="mb-1">
-                                <b>' . $tipo_inmueble . ' en ' . $gestion . '</b>
-                            </p>
-                        </div>
-                        <div class="col-md-12">
-                            <p class="mb-1">
-                                <i class="fas fa-map-marker-alt mr-2">
-                                    ' . $barrio . ', ' . $ciudad . '
-                                </i>
-                            </p>
-                        </div>
+            <div class="card" style="width: 22rem;">
+                                <a  href="detalle_inmueble.php?co=' . $codigo . '">
+                                    <img src="' . $imagen . '" class="card-img-top" alt="...">
+                                </a>
+                                <span class="codigo_inmueble">Código:' . $codigo . '</span>
+                                <span class="precio_inmueble_destacadas">' . $precio . '</span>
+                                <div class="card-body">
+                                    <h5 class="card-title">' . $tipo_inmueble . ' en ' . $gestion . '</h5>
+                                    <div class="col-12 row">
+                                       <i class="fas fa-map-marker-alt mr-2">
+                                        </i>
+                                        <p> ' . $barrio . ', ' . $ciudad . ' </p>
+                                    </div>
+                                    <div class="col-md-12 row ">
+                                        <ul class="info_inmueble mt-3">
+                                            <li class="container_li">
+                                                <i class="fas fa-chart-area icono_inmueble mr-1"></i>
+                                                <span>' . $area_construida . 'm<sup>2</sup></span>
+                                            </li>
+                                            <li class="container_li">
+                                                <i class="fas fa-bath icono_inmueble mr-1"></i>
+                                                <span>' . $banios . '</span>
+                                            </li>
+                                            <li class="container_li">
+                                                <i class="fa fa-bed icono_inmueble mr-1"></i>
+                                                <span>' . $alcobas . '</span>
+                                            </li>
+                                            <li class="container_li">
+                                                <i class="fa fa-car icono_inmueble mr-1"></i>
+                                                <span> ' . $garaje . '</span>
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                        <div class="col-md-12">
-                            <p class="mb-1">
-                                <b>' . $codigo . '</b>
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="col-md-12 row ">
 
-                        <ul class="info_inmueble mt-3">
-                            <li class="container_li">
-                                <i class="fas fa-chart-area icono_inmueble mr-1"></i>
-                                ' . $area_construida . 'm<sup>2</sup>
-                            </li>
-                            <li class="container_li">
-                                <i class="fas fa-bath icono_inmueble mr-1"></i>
-                                ' . $banios . '
-                            </li>
-                            <li class="container_li">
-                                <i class="fa fa-bed icono_inmueble mr-1"></i>
-                                ' . $alcobas . '
-                            </li>
-                            <li class="container_li">
-                                <i class="fa fa-car icono_inmueble mr-1"></i>
-                                ' . $garaje . '
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
             ';
     }
 }
@@ -131,7 +118,7 @@ function modelo_inmueble_listar($r)
         echo
             '<div class="row mb-5">
             <div class="col-md-6 ">
-                <a href="detalle_inmueble.php?co='.$codigo.'&pre='.$precio.'"><img src="' . $imagen . '" alt=""></a>
+                <a href="detalle_inmueble.php?co='.$codigo.'"><img src="' . $imagen . '" alt=""></a>
             </div>
             <div class="col-md-6 ">
 
@@ -153,7 +140,7 @@ function modelo_inmueble_listar($r)
                                     <ul class="info_inmueble mt-3">
                                         <li class="container_li">
                                             <i class="fas fa-chart-area icono_inmueble mr-1"></i>
-                                            <span>' . $area_construida . 'm<sup>2</sup></span>
+                                            <span>' . $area_construida . 'mts<sup>2</sup></span>
                                         </li>
                                         <li class="container_li">
                                             <i class="fas fa-bath icono_inmueble mr-1"></i>
@@ -168,7 +155,7 @@ function modelo_inmueble_listar($r)
                                             <span>' . $garaje . '</span>
                                         </li>
                                     </ul>
-                                    <a class="btn rounded-0 col-12 botoon_inmueble" type="button" href="detalle_inmueble.php?co='.$codigo.'&pre='.$precio.'">Ver Más</a>
+                                    <a class="btn rounded-0 col-12 botoon_inmueble" type="button" href="detalle_inmueble.php?co='.$codigo.'">Ver Más</a>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +171,7 @@ function modelo_inmueble_similares($r)
 {
     for ($i = 0; $i < count($r); $i++) {
         $imagen = existeImagen(($r[$i]['foto1']));
-        $codigo = str_ireplace("971-", "", $r[$i]['Codigo_Inmueble']);
+        $codigo = str_ireplace("979-", "", $r[$i]['Codigo_Inmueble']);
         $api = $r[$i];
         $precio = price_validate($api);
         // Renombrar variables
@@ -260,3 +247,5 @@ function console_log($output, $with_script_tags = true)
     }
     echo $js_code;
 }
+
+

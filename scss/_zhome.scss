@@ -49,7 +49,18 @@ body {
     margin-left: 58%;
       }
   }
- #estadisticas{
+  .precio_inmueble_destacadas{
+    position: absolute;
+    top: 223px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.5px;
+    background-color: #0b5998;
+    padding: 6px 46px 7px 45px;
+    margin-left: 49%;
+  }
+ .estadisticas{
         background: url(../images/banner_estadisticas_home.png) no-repeat;
         background-position: center;
         position: relative;
@@ -63,6 +74,10 @@ body {
             right: 0;
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.7);
+        }
+        .div_invisible{
+          visibility: hidden !important;
+         position: absolute;
         }
     
  }

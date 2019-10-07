@@ -10,7 +10,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
     <?php
     $page = 'Detalle Inmueble';
     include 'layout/archviosheader.php';
-    $preci = $_GET['pre'] ?>
+    ?>
 
 
 </head>
@@ -28,6 +28,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/carousel.tamanos.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
 
 
 
@@ -43,14 +44,14 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                     <span class="color_codigo">Codigo <?php echo $co; ?></span>
                                 </div>
                                 <h4 class="Titulo_principal"><?php echo $tipo_inmueble; ?> en <?php echo $gestion; ?> </h4>
-                                <span class="style_ubicacion"><i class="color_icono fas fa-map-marker-alt m-2"></i><?php echo $barrio;?>, <?php echo $ciudad; ?> </span>
+                                <span class="style_ubicacion"><i class="color_icono fas fa-map-marker-alt m-2"></i><?php echo $barrio; ?>, <?php echo $ciudad; ?> </span>
                             </li>
                             <li class="con_detalle_inform ">
 
                                 <ul class="info_inmueble mt-3">
                                     <li class="">
                                         <i class="fas fa-chart-area icono_inmueble mr-1"></i>
-                                        <span><?php echo $area_construida;?> m<sup>2</sup></span>
+                                        <span><?php echo $area_construida; ?> mts<sup>2</sup></span>
                                     </li>
                                     <li class="">
                                         <i class="fas fa-bath icono_inmueble mr-1"></i>
@@ -67,12 +68,19 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                 </ul>
                             </li>
                             <li class="cont_precio ">
-                                <h4 class="precio_style"><?php echo $preci ?></h4>
+                                <h4 class="precio_style"><?php if ($r['Gestion'] == 'Arriendo') {
+                                                                echo '<h3 class="precio">$ ' . $r['ValorCanon'] . '</h3>';
+                                                            } else if ($r['Gestion'] == 'Venta') {
+                                                                echo '<h3 class="precio">$ ' . $r['ValorVenta'] . '</h3>';
+                                                            } else {
+                                                                echo '<h3 class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</h3>';
+                                                            }
+                                                            ?></h4>
 
                             </li>
                         </ul>
                         <div class="compartir">
-                            <a class=" btn btn-outline-primary round-0" href="#" role="button">Compartir Ficha</a>
+                            <a class=" btn btn-outline-primary round-0" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=979-<?php echo $co ?>" target="_blank" role="button">Compartir Ficha</a>
                         </div>
 
                         <ul class="cont_compart ">
@@ -102,13 +110,116 @@ require 'controllers/detalleInmuebleController.php'; ?>
 
         </section>
 
-        <section class="container ">
 
+        <section id="carrousel">
             <div class="container">
+                <!-- partial:index.partial.html -->
+                <div class="swiper-container main-slider loading">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
 
+                <!-- Thumbnail navigation -->
+                <div class="swiper-container nav-slider loading">
+                    <div class="swiper-wrapper" role="navigation">
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
+                                <img src="images/no_images.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title"></p>
+                                <span class="caption"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </section>
+
 
         <section>
             <div class="container ">
@@ -136,7 +247,48 @@ require 'controllers/detalleInmuebleController.php'; ?>
 
                                 </div>
                             </div>
+                            <div class="Inmuebles_similares">
+                                <div class="text-center">
+                                    <div>
+                                        <h5 class="titulo_similares" class="mb-0"><strong>Inmuebles similares</strong></h5>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div class="item mb-4">
+                                                <div class="card" style="">
+                                                    <div class="property">
+                                                        <a href="detalle_inmueble.php?co=' . $codigo . '">
+                                                            <div class="property-image">
+                                                                <img class="alto_img" alt="" src="images/no_image.png"></div>
+                                                            <div class="overlay">
+
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 margen_card">
+                                                        <div class="col-12">
+                                                            <p class="mb-1"><b>Tipo inmueble / Gestión</b></p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> <strong>Bario / ciudad</strong></p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="mb-1"> <small> <strong>Codigo</strong>
+
+                                                                </small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+
                         <div class="col-md-8 row cont_caract">
                             <!-- descripcion -->
                             <div class="col-md-6" style="margin-bottom: 12px;">
@@ -174,7 +326,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                             <?php
                             if (count($r['caracteristicasExternas']) > 0) {
                                 echo
-                                    '<div class="col-md-6 row" style="margin-bottom: 12px;">
+                                    '<div class="col-md-6 row cont_externas">
                                     <h4 class="Lineas_separadora"><strong>Características Externas</strong></h4>
                                         <ul>';
                                 for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
@@ -211,46 +363,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4  Inmuebles_similares">
-                        <div class="text-center">
-                            <div>
-                                <h5 class="titulo_similares" class="mb-0"><strong>Inmuebles similares</strong></h5>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-12">
-                                    <div class="item mb-4">
-                                        <div class="card" style="">
-                                            <div class="property">
-                                                <a href="detalle_inmueble.php?co=' . $codigo . '">
-                                                    <div class="property-image">
-                                                        <img class="alto_img" alt="" src="images/no_image.png"></div>
-                                                    <div class="overlay">
 
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-12 margen_card">
-                                                <div class="col-12">
-                                                    <p class="mb-1"><b>Tipo inmueble / Gestión</b></p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> <strong>Bario / ciudad</strong></p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p class="mb-1"> <small> <strong>Codigo</strong>
-
-                                                        </small>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
         </section>
 
@@ -264,7 +377,8 @@ require 'controllers/detalleInmuebleController.php'; ?>
     <!-- *******************Scripts********************* -->
     <?php include 'layout/archivosfooter.php' ?>
     <script src="js/slick.min.js"></script>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+    <script src="./js/corrousel.js"></script>
 
 
 

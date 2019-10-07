@@ -1,4 +1,6 @@
-<?php require 'variables/variables.php'; ?>
+<?php require 'variables/variables.php';
+require 'controllers/indexController.php'; 
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -57,37 +59,31 @@
             <div class="container">
                 <div class="col-md-12 ">
                     <div class="row">
-                        <div class="col-lg-3 col-md-4 col-12  form-group pr-md-0 p-3">
+                        <div class="col-lg-3 col-md-3 col-12  form-group pr-md-0 mt-3">
                             <input type="text" class="form-control " id="codigo_buscar" placeholder="Código">
                         </div>
-                        <div class="col-lg-3 col-md-4 col-12 form-group pr-md-0 p-3">
+                        <div class="col-lg-3 col-md-34 col-12 form-group pr-md-0 mt-3">
                             <div class="select w-100">
                                 <select id="ciudad_buscar" class="form-control">
                                     <option selected="" value="0">Ciudad</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-12 form-group pr-md-0 p-3">
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0 mt-3">
                             <div class="select w-100">
                                 <select id="barrio_buscar" class="form-control">
                                     <option selected="" value="0">Barrio</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3 col-lg-3 form-group pr-md-0 p-3">
-                            <button class="btn btn-md btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <span> Búsqueda avanzada</span>
-                            </button>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12 form-group pr-md-0">
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0 mt-3">
                             <div class="select w-100">
                                 <select id="tipo_gestion_buscar" class="form-control">
                                     <option selected="" value="0">Tipo de Gestión</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-12 form-group pr-md-0">
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0">
                             <div class="select w-100">
                                 <select id="tipo_inmueble_buscar" class="form-control">
                                     <option selected="" value="0">Tipo de Inmueble</option>
@@ -96,29 +92,33 @@
                         </div>
 
 
-
-                        <div class="collapse col-12 row" id="collapseExample">
-                            <div class="col-lg-4 col-md-6 col-12 form-group pr-md-0">
-                                <input type="text" class="form-control " id="banios_buscar" placeholder=" Baños">
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-12 form-group pr-md-0">
-                                <input type="text" class="form-control " id="alcobas_buscar" placeholder=" Habitaciones">
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-12 form-group pr-md-0">
-                                <input type="text" class="form-control " id="garajes_buscar" placeholder=" Garajes">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12 form-group pr-md-0">
-                                <input type="text" class="form-control " id="area_minima_buscar" placeholder=" Área Mínima">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12 form-group pr-md-0">
-                                <input type="text" class="form-control " id="area_maxima_buscar" placeholder=" Área Máxima">
-                            </div>
-                            <div class="col-12 col-md-6 form-group pr-md-0">
-                            <button class="btn btn-md btn-block" type="button" data-toggle="collapse" id="buscar">
-                                <span> Búsqueda avanzada</span>
-                            </button>
-                            </div>
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0">
+                            <input type="text" class="form-control " id="banios_buscar" placeholder=" Baños">
                         </div>
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0">
+                            <input type="text" class="form-control " id="alcobas_buscar" placeholder=" Habitaciones">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0">
+                            <input type="text" class="form-control " id="garajes_buscar" placeholder=" Garajes">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 form-group pr-md-0">
+                            <input type="text" class="form-control " id="area_minima_buscar" placeholder=" Área Mínima">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 form-group pr-md-0">
+                            <input type="text" class="form-control " id="area_maxima_buscar" placeholder=" Área Máxima">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 form-group pr-md-0">
+
+                        </div>
+                        <div class="col-12 col-md-6 form-group pr-md-0">
+                            <button class="btn btn-md btn-block" type="button" data-toggle="collapse" id="buscar">
+                                <span> Búscar</span>
+                            </button>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-12 form-group pr-md-0">
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -131,138 +131,35 @@
                 <div class="col-12 text-center">
                     <h2>Propiedades destacadas</h2>
                 </div>
-                <div class="col-12 mt-4">
+                <div class="col-md-12 mt-4">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card" style="width: 22rem;">
-                                <a href="">
-                                    <img src="images/no_image.png" class="card-img-top" alt="...">
-                                </a>
-                                <span class="codigo_inmueble">Código: 50</span>
-                                <span class="precio_inmueble">$Precio</span>
-                                <div class="card-body">
-                                    <h5 class="card-title">Tipo de inmueble / gestión</h5>
-                                    <div class="col-12 row">
-                                        <i class="fas fa-map-marker-alt mr-2">
-                                        </i>
-                                        <p> Ubicación </p>
-                                    </div>
-                                    <div class="col-md-12 row ">
-                                        <ul class="info_inmueble mt-3">
-                                            <li class="container_li">
-                                                <i class="fas fa-chart-area icono_inmueble mr-1"></i>
-                                                <span>113m</span>
-                                            </li>
-                                            <li class="container_li">
-                                                <i class="fas fa-bath icono_inmueble mr-1"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="container_li">
-                                                <i class="fa fa-bed icono_inmueble mr-1"></i>
-                                                <span>3</span>
-                                            </li>
-                                            <li class="container_li">
-                                                <i class="fa fa-car icono_inmueble mr-1"></i>
-                                                <span>1</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-                                </div>
-                            </div>
+                            <!-- traer inmuebles destacados -->
+                            <?php
+                            if (is_array($api)) {
+                                inmuebles_destacados($api);
+                            } else {
+                                echo '<h2 class="text-center" >No tiene Inmuebles Destacados</h2>';
+                            }
+                            ?>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card" style="width: 22rem;">
-                                <a href="">
-                                    <img src="images/no_image.png" class="card-img-top" alt="...">
-                                </a>
-                                <span class="codigo_inmueble">Código: 50</span>
-                                <span class="precio_inmueble">$Precio</span>
-                                <div class="card-body">
-                                    <h5 class="card-title">Tipo de inmueble / gestión</h5>
-                                    <div class="col-12 row">
-                                        <i class="fas fa-map-marker-alt mr-2">
-                                        </i>
-                                        <p> Ubicación </p>
-                                    </div>
-                                    <div class="col-md-12 row ">
-                                        <ul class="info_inmueble mt-3">
-                                            <li class="container_li">
-                                                <i class="fas fa-chart-area icono_inmueble mr-1"></i>
-                                                <span>113m</span>
-                                            </li>
-                                            <li class="container_li">
-                                                <i class="fas fa-bath icono_inmueble mr-1"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="container_li">
-                                                <i class="fa fa-bed icono_inmueble mr-1"></i>
-                                                <span>3</span>
-                                            </li>
-                                            <li class="container_li">
-                                                <i class="fa fa-car icono_inmueble mr-1"></i>
-                                                <span>1</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card" style="width: 22rem;">
-                                <a href="">
-                                    <img src="images/no_image.png" class="card-img-top" alt="...">
-                                </a>
-                                <span class="codigo_inmueble">Código: 50</span>
-                                <span class="precio_inmueble">$Precio</span>
-                                <div class="card-body">
-                                    <h5 class="card-title">Tipo de inmueble / gestión</h5>
-                                    <div class="col-12 row">
-                                        <i class="fas fa-map-marker-alt mr-2">
-                                        </i>
-                                        <p> Ubicación </p>
-                                    </div>
-                                    <div class="col-md-12 row ">
-                                        <ul class="info_inmueble mt-3">
-                                            <li class="container_li">
-                                                <i class="fas fa-chart-area icono_inmueble mr-1"></i>
-                                                <span>113m</span>
-                                            </li>
-                                            <li class="container_li">
-                                                <i class="fas fa-bath icono_inmueble mr-1"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="container_li">
-                                                <i class="fa fa-bed icono_inmueble mr-1"></i>
-                                                <span>3</span>
-                                            </li>
-                                            <li class="container_li">
-                                                <i class="fa fa-car icono_inmueble mr-1"></i>
-                                                <span>1</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
+                        
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="estadisticas">
+        <section id="contador" class="estadisticas">
             <div class="banner_estadi">
 
                 <div class="">
                     <div class="container  contenedor_banner">
                         <div class="row d-flex justify-content-between" style="padding: 73px;">
-                            <!-- <div class="invisible">
+                             <div class="invisible div_invisible espacio_div col-xl-1 col-md-3 col-12 text-center">
                                 <h2 id="counter-experence"></h2>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][0] ?> </h5>
-                            </div> -->
+                            </div> 
                             <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center">
                                 <div>
 
@@ -280,14 +177,14 @@
                             <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center">
                                 <div>
 
-                                    <h2 id="counter-sale"></h2>
+                                    <h2 id="counter-sale">0</h2>
                                     <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][3] ?> </h5>
                                 </div>
                             </div>
                             <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center">
                                 <div>
 
-                                    <h2 id="counter-sale-rent"></h2>
+                                    <h2 id="counter-sale-rent">0</h2>
                                     <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][4] ?> </h5>
                                 </div>
                             </div>
@@ -438,10 +335,10 @@
 
     <!--  contador -->
     <script src="conexion_api/buscador.js"></script>
-    <!--
+    
     <script src="js/countUp.min.js"></script>
     <script src="js/counter-propertys.js"></script>
--->
+
 </body>
 
 </html>

@@ -36,49 +36,51 @@
                         <div class="col-md-6">
                             <h2 class="text-center"> Arrendamos Ya SAS</h2>
                             <div class="banner_estadi">
-
-                                <div class="text-center">
-                                    <div class="container  contenedor_banner">
-                                        <div class="row d-flex justify-content-between" style="padding: 24px;">
-                                            <div class="col-md-12">
-                                                <h2 id="counter-experence"></h2>
-                                                <h4> <strong>5</strong> </h4>
-                                                <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][0] ?></strong></h5>
-                                            </div>
-                                            <div class=" espacio_div col-xl-12 col-md-3 col-12 text-center mb-3">
-                                                <div>
-                                                    <h2 id="counter-propertys"></h2>
-                                                    <h4> <strong>19</strong> </h4>
-                                                    <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][1] ?></strong></h5>
-                                                </div>
-                                            </div>
-                                            <div class=" espacio_div col-xl-12  col-md-3 col-12 text-center mb-3">
-                                                <div>
-
-                                                    <h2 id="counter-rent"></h2>
-                                                    <h4> <strong>30</strong> </h4>
-                                                    <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][2] ?></strong> </h5>
-                                                </div>
-                                            </div>
-                                            <div class=" espacio_div col-xl-12  col-md-3 col-12 text-center mb-3">
-                                                <div>
-
-                                                    <h2 id="counter-sale"></h2>
-                                                    <h4> <strong>26</strong> </h4>
-                                                    <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][3] ?></strong> </h5>
-                                                </div>
-                                            </div>
-                                            <div class=" espacio_div col-xl-12  col-md-3 col-12 text-center mb-3">
-                                                <div>
-
-                                                    <h2 id="counter-sale-rent"></h2>
+                                <section id="contador">
+                                    <div class="text-center">
+                                        <div class="container  contenedor_banner">
+                                            <div class="row d-flex justify-content-between" style="padding: 24px;">
+                                                <div class="col-md-12 div_invisible invisible">
+                                                    <h2 id="counter-experence"></h2>
                                                     <h4> <strong>5</strong> </h4>
-                                                    <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][4] ?></strong></h5>
+                                                    <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][0] ?></strong></h5>
+                                                </div>
+                                                <div class=" espacio_div col-xl-12 col-md-3 col-12 text-center mb-3">
+                                                    <div>
+                                                        <h2 id="counter-propertys"></h2>
+                                                        <h4> <strong></strong> </h4>
+                                                        <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][1] ?></strong></h5>
+                                                    </div>
+                                                </div>
+                                                <div class=" espacio_div col-xl-12  col-md-3 col-12 text-center mb-3">
+                                                    <div>
+
+                                                        <h2 id="counter-rent"></h2>
+                                                        <h4> <strong></strong> </h4>
+                                                        <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][2] ?></strong> </h5>
+                                                    </div>
+                                                </div>
+                                                <div class=" espacio_div col-xl-12  col-md-3 col-12 text-center mb-3">
+                                                    <div>
+
+                                                        <h2 id="counter-sale"></h2>
+                                                        <h2>0</h2>
+                                                        <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][3] ?></strong> </h5>
+                                                    </div>
+                                                </div>
+                                                <div class=" espacio_div col-xl-12  col-md-3 col-12 text-center mb-3">
+                                                    <div>
+
+                                                        <h2 id="counter-sale-rent"></h2>
+                                                        <h2>0</h2>
+                                                        <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][4] ?></strong></h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </section>
+
 
                             </div>
                         </div>
@@ -213,6 +215,7 @@
     <!--  contador -->
 
     <script src="js/counter-propertys.js"></script>
+    <script src="js/countUp.min.js"></script>
 </body>
 
 </html>
