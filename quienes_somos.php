@@ -31,7 +31,9 @@
                     <div class="row">
                         <div class="col-md-6">
                             <img src="images/no_image.png" alt="">
-                            <p class="mt-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+                            <p class="mt-5"><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][0]?></p>
+                            <p class="mt-1"><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][1]?> <?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][2]?></p>
+                            <p class="mt-1"><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][3]?><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][4]?></p>
                         </div>
                         <div class="col-md-6">
                             <h2 class="text-center"> Arrendamos Ya SAS</h2>

@@ -2,6 +2,10 @@
     font-family: "CaviarDreams";
     src: url("../fonts/CaviarDreams.ttf");
 }
+@font-face{
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
 body {
     display: flex;
     min-height: 100vh;
@@ -9,13 +13,22 @@ body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    
+  }
+
+  h1,h2,h3,h4,h5{
     font-family: "CaviarDreams";
   }
+
+  p , a  {
+    font-family: "Roboto";
+  } 
+
   #destacadas{
     .info_inmueble{
         display: flex;
         list-style: none;
-        margin-left: -6%;
+        margin-left: -2%;
         margin-right: -10%;
       }
       .container_li{
@@ -90,6 +103,12 @@ body {
         font-weight: bold;
         
     }
+    img{
+      width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    }
     .menu-item{
     font-size: 0.9rem;
     border-bottom: 1px solid #826a6173;
@@ -123,7 +142,7 @@ body {
     }
     .footer_redes {
         margin: 0;
-        
+        margin-left: 17%;
         list-style-type: none;
         display: flex;
         text-align: center;
@@ -144,13 +163,22 @@ body {
           padding: 0 11px;
         }
         .color_face{
-          color: #0c50a7;
+          color: $color_azul;
+          :hover{
+            color: $color_azul_oscuro;
+          }
         }
         .color_insta{
-          color: #cf3c6d;
+          color: $color_azul;
+          :hover{
+            color: $color_azul_oscuro;
+          }
         }
         .color_youtu{
-          color: red;
+          color: $color_azul;
+          :hover{
+            color: $color_azul_oscuro;
+          }
           
     }
   }

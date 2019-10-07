@@ -1,5 +1,5 @@
 <?php require 'variables/variables.php';
-require 'controllers/indexController.php'; 
+require 'controllers/indexController.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -101,11 +101,17 @@ require 'controllers/indexController.php';
                         <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0">
                             <input type="text" class="form-control " id="garajes_buscar" placeholder=" Garajes">
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12 form-group pr-md-0">
+                        <div class="col-lg-3 col-md-6 col-12 form-group pr-md-0">
                             <input type="text" class="form-control " id="area_minima_buscar" placeholder=" Área Mínima">
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12 form-group pr-md-0">
+                        <div class="col-lg-3 col-md-6 col-12 form-group pr-md-0">
                             <input type="text" class="form-control " id="area_maxima_buscar" placeholder=" Área Máxima">
+                        </div>
+                        <div class="col-lg-3  col-md-4 form-group pr-md-0">
+                            <input type="text" id='precio_minimo_buscar' class="form-control  select_color" placeholder="Precio Mínimo">
+                        </div>
+                        <div class="col-lg-3  col-md-4 form-group pr-md-0">
+                            <input type="text" id='precio_maximo_buscar' class="form-control  select_color" placeholder="Precio Máximo">
                         </div>
                         <div class="col-lg-3 col-md-6 col-12 form-group pr-md-0">
 
@@ -143,8 +149,8 @@ require 'controllers/indexController.php';
                             }
                             ?>
                         </div>
-                       
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -156,10 +162,10 @@ require 'controllers/indexController.php';
                 <div class="">
                     <div class="container  contenedor_banner">
                         <div class="row d-flex justify-content-between" style="padding: 73px;">
-                             <div class="invisible div_invisible espacio_div col-xl-1 col-md-3 col-12 text-center">
+                            <div class="invisible div_invisible espacio_div col-xl-1 col-md-3 col-12 text-center">
                                 <h2 id="counter-experence"></h2>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][0] ?> </h5>
-                            </div> 
+                            </div>
                             <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center">
                                 <div>
 
@@ -202,7 +208,7 @@ require 'controllers/indexController.php';
                 <div class="col-12">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12 mt-3">
-                            <img src="images/no_image.png" alt="">
+                            <img src="images/documentos.png" alt="">
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 text-center">
                             <h2> Formularios aseguradoras</h2>
@@ -312,7 +318,7 @@ require 'controllers/indexController.php';
                 <img src="images/Logo.png" class="card-img-top" alt="...">
             </div>
             <div class=" container col-md-10">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+            <p class="mt-1"><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][0]?></p>
             </div>
             <div class="container col-md-2 cont_redes">
                 <ul class="footer_redes">
@@ -335,7 +341,7 @@ require 'controllers/indexController.php';
 
     <!--  contador -->
     <script src="conexion_api/buscador.js"></script>
-    
+
     <script src="js/countUp.min.js"></script>
     <script src="js/counter-propertys.js"></script>
 

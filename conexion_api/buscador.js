@@ -193,8 +193,8 @@ var busqueda = function(){
     banios_buscar = $('#banios_buscar').val();
     garajes_buscar = $('#garajes_buscar').val();
 
-    // precio_minimo_buscar = precio_minimo_buscar.replace('.', '');    
-    // precio_maximo_buscar = precio_maximo_buscar.replace('.', '');
+     precio_minimo_buscar = precio_minimo_buscar.replace('.', '');    
+     precio_maximo_buscar = precio_maximo_buscar.replace('.', '');
     // Si no trae nada del buscador definirla en cero
 
     ciudad_buscar = existeCampo(ciudad_buscar);
