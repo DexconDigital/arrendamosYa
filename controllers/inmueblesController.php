@@ -46,7 +46,7 @@ $precio_maximo = str_ireplace('.','', $precio_maximo);
 // Codigo de la pecicion del api 
 $ch = curl_init();
 $headers =  'Authorization:' . TOKEN;
-curl_setopt($ch, CURLOPT_URL, 'http://www.simi-api.com/ApiSimiweb/response/v2.1.3/filtroInmueble/limite/' . $pag . '/total/1/departamento/0/ciudad/' . $ciudad . '/zona/0/barrio/' . $barrio . '/tipoInm/' . $inmueble . '/tipOper/' . $gestion . '/areamin/'.$area_minima.'/areamax/'.$area_maxima.'/valmin/'.$precio_minimo.'/valmax/'.$precio_maximo.'/campo/0/order/desc/banios/'.$banios.'/alcobas/'.$alcobas.'/garajes/'.$garaje.'/sede/0/usuario/0');
+curl_setopt($ch, CURLOPT_URL, 'http://www.simi-api.com/ApiSimiweb/response/v2.1.3/filtroInmueble/limite/' . $pag . '/total/9/departamento/0/ciudad/' . $ciudad . '/zona/0/barrio/' . $barrio . '/tipoInm/' . $inmueble . '/tipOper/' . $gestion . '/areamin/'.$area_minima.'/areamax/'.$area_maxima.'/valmin/'.$precio_minimo.'/valmax/'.$precio_maximo.'/campo/0/order/desc/banios/'.$banios.'/alcobas/'.$alcobas.'/garajes/'.$garaje.'/sede/0/usuario/0');
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
@@ -90,7 +90,7 @@ if (is_array($r)) {
     
     
     $totalItems = $totalinmuebles;
-    $itemsPerPage = 1;
+    $itemsPerPage = 9;
     $currentPage = $pag;
     $urlPattern = $url_pagina.'&pag=(:num)';
     

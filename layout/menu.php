@@ -28,7 +28,7 @@
                         <a class="nav-link" href="index.php">Inicio</a>
                     </li>
                     <li class="nav-item <?php echo ($page == "Quienes Somos") ? "active" : ""; ?>">
-                        <a class="nav-link" href="quienes_somos.php">Quienes Somos</a>
+                        <a class="nav-link" href="quienes_somos.php">Quíenes Somos</a>
                     </li>
                     <li class="nav-item <?php echo ($page == "Inmuebles" || $page == "Detalle Inmueble") ? "active" : "" ?>">
                         <a class="nav-link" href="inmuebles.php?">Inmuebles</a>
