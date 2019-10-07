@@ -137,56 +137,43 @@ require 'controllers/detalleInmuebleController.php'; ?>
         </section>
 
 
-        <section id="carrousel">
+        <section id="carousel_slider">
             <div class="container">
                 <!-- partial:index.partial.html -->
                 <div class="swiper-container main-slider loading">
                     <div class="swiper-wrapper">
+                        <?php
+                        if (isset($r['fotos'])) {
+                            for ($i = 0; $i < count($r['fotos']); $i++) {
+                                echo ' <div class="swiper-slide">
+                                        <figure class="slide-bgimg" style="background-image:url(' . $r['fotos'][$i]['foto'] . ')">
+                                          <img src="' . $r['fotos'][$i]['foto'] . '" class="entity-img" />
+                                        </figure>
+                                        <div class="content">
+                                            <p class="title"></p>
+                                            <span class="caption"></span>
+                                        </div>
+                                               </div>
+                                        
+                                       ';
+                            }
+                        } else {
+                            echo  '<div class="contenedor-img">
+                                        <img src="images/no_image.png" alt="">
+                                    </div>';
+                        }
+                        ?>
+                        <!--
                         <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
+                            <figure class="slide-bgimg" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E)">
+                                <img src="" class="entity-img" />
                             </figure>
                             <div class="content">
                                 <p class="title"></p>
                                 <span class="caption"></span>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
-                            </figure>
-                            <div class="content">
-                                <p class="title"></p>
-                                <span class="caption"></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
-                            </figure>
-                            <div class="content">
-                                <p class="title"></p>
-                                <span class="caption"></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
-                            </figure>
-                            <div class="content">
-                                <p class="title"></p>
-                                <span class="caption"></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
-                            </figure>
-                            <div class="content">
-                                <p class="title"></p>
-                                <span class="caption"></span>
-                            </div>
-                        </div>
+                    -->
                     </div>
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev swiper-button-white"></div>
@@ -196,53 +183,39 @@ require 'controllers/detalleInmuebleController.php'; ?>
                 <!-- Thumbnail navigation -->
                 <div class="swiper-container nav-slider loading">
                     <div class="swiper-wrapper" role="navigation">
+                    <?php
+                        if (isset($r['fotos'])) {
+                            for ($i = 1; $i < count($r['fotos']); $i++) {
+                                echo ' <div class="swiper-slide">
+                                        <figure class="slide-bgimg" style="background-image:url(' . $r['fotos'][$i]['foto'] . ')">
+                                          <img src="' . $r['fotos'][$i]['foto'] . '" class="entity-img" />
+                                        </figure>
+                                        <div class="content">
+                                            <p class="title"></p>
+                                        </div>
+                                    </div>
+                                        
+                                       ';
+                            }
+                        } else {
+                            echo  '<div class="contenedor-img">
+                                        <img src="images/no_image.png" alt="">
+                                    </div>';
+                        }
+                        ?>
+                        <!--
                         <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
+                            <figure class="slide-bgimg" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E)">
+                                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E" class="entity-img" />
                             </figure>
                             <div class="content">
-                                <p class="title"></p>
-                                <span class="caption"></span>
+                                <p class="title">Shaun Matthews</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
-                            </figure>
-                            <div class="content">
-                                <p class="title"></p>
-                                <span class="caption"></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
-                            </figure>
-                            <div class="content">
-                                <p class="title"></p>
-                                <span class="caption"></span>
-                            </div>
-                        </div>>
-                        <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
-                            </figure>
-                            <div class="content">
-                                <p class="title"></p>
-                                <span class="caption"></span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background:url(images/no_image.png)">
-                                <img src="images/no_images.png" class="entity-img" />
-                            </figure>
-                            <div class="content">
-                                <p class="title"></p>
-                                <span class="caption"></span>
-                            </div>
-                        </div>
+                    -->
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -281,7 +254,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                     <div class="row justify-content-center">
                                         <div class="col-12">
 
-                                        <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
+                                            <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
                                             <!--
                                             <div class="item mb-4">
                                                 <div class="card" style="">
@@ -427,17 +400,17 @@ require 'controllers/detalleInmuebleController.php'; ?>
 
     <!-- mapa del inmueble -->
     <script src="mapas/leaflet.js" crossorigin=""></script>
-        <script>
-            var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
+    <script>
+        var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
 
-            L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
-                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
-            }).addTo(map);
+        L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+        }).addTo(map);
 
-            L.marker([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>]).addTo(map)
-                .bindPopup('<img src="<?php echo $r['fotos'][0]['foto'] ?>"])" alt="" width="55px" height="auto"><br>Ubicación')
-                .openPopup();
-        </script>
+        L.marker([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>]).addTo(map)
+            .bindPopup('<img src="<?php echo $r['fotos'][0]['foto'] ?>"])" alt="" width="55px" height="auto"><br>Ubicación')
+            .openPopup();
+    </script>
 
 
 </body>
