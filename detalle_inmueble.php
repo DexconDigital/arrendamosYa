@@ -111,19 +111,19 @@ require 'controllers/detalleInmuebleController.php'; ?>
                         <ul class="cont_compart ">
                             <p>Compartir por :</p>
                             <li class="tamaño_redes">
-                                <a href="#" class="cont_icon">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.arrendamosya.com%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank"  class="cont_icon">
                                     <i class="fab fa-facebook-f icono_style" aria-hidden="true"></i>
 
                                 </a>
                             </li>
                             <li class="tamaño_redes">
-                                <a href="#" class="cont_icon">
+                                <a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.arrendamosya.com%2Fdetalle_inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank" class="cont_icon">
                                     <i class="fab fa-twitter icono_style"></i>
 
                                 </a>
                             </li>
                             <li class="tamaño_redes">
-                                <a href="#" class="cont_icon">
+                            <a target="_blank" href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www.arrendamosya.com/detalleInmueble.php?codigo%3d' . $co ?>" class="cont_icon">
                                     <i class="fab fa-whatsapp icono_style"></i>
 
                                 </a>
@@ -238,7 +238,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                         <div class="col-12  mt-2 text-center">
                                             <div><?php echo $asesor['ntercero']; ?></div>
                                             <div><i class=""></i><a class="color_negro" href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></div>
-                                            <div><i class=""></i><a class="color_negro" href="mailto:"><?php echo $asesor['correo']; ?></a></div>
+                                            <div><i class=""></i><a class="color_negro" href="mailto:<?php echo $asesor['correo']; ?>"><?php echo $asesor['correo']; ?></a></div>
 
                                         </div>
 
