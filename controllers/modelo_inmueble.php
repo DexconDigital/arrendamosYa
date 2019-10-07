@@ -181,37 +181,33 @@ function modelo_inmueble_similares($r)
         $tipo_inmueble = $api['Tipo_Inmueble'];
         echo '
         <div class="item mb-4">
-        <div class="card" style="">
-          <div class="property">
-            <a href="detalle_inmueble.php?co=' . $codigo . '">
-              <div class="property-image">
-                <img class="alto_img" alt="" src="' . $imagen . '"></div>
-              <div class="precio">
-                
-              </div>
-              <div class="overlay">
-               
-              </div>
-            </a>
-          </div>
-        <div class=" row col-12 margen_card">
-        <div class="col-12">
-          <p class="mb-1"><b>' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . '</b></p>
-        </div>
-        <div class="col-12">
-          <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i>' . $api['Barrio'] . ', ' . $api['Ciudad'] . '</p>
-        </div>
-        <hr>
-        <div class="col-12">
-          <p class="mb-1"> <small>
-              Código:' . $codigo . '
-            </small>
-          </p>
-        </div>
-      </div>
-    </div>
+                                                <div class="card" style="">
+                                                    <div class="property">
+                                                        <a href="detalle_inmueble.php?co=' . $codigo . '">
+                                                            <div class="property-image">
+                                                                <img class="imagen_destacadas" alt="" src="' . $imagen . '"></div>
+                                                            <div class="overlay">
 
-  </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 margen_card mt-3">
+                                                        <div class="col-12">
+                                                            <p class="mb-1"><b>' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . '</b></p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> <strong>' . $api['Barrio'] . ', ' . $api['Ciudad'] . '</strong></p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="mb-1"> <small> <strong>Código: ' . $codigo . '</strong>
+
+                                                                </small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
            ';
     }
 }

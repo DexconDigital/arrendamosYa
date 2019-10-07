@@ -25,10 +25,35 @@ require 'controllers/detalleInmuebleController.php'; ?>
         <?php include 'layout/menu.php' ?>
     </section>
 
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/carousel.tamanos.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+    <link rel="stylesheet" href="mapas/leaflet.css" crossorigin="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+    <meta property="og:title" content="<?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?>" />
+    <meta property="og:description" content="Inmueble ubicado en: <?php echo $r['barrio'] . ', ' . $r['ciudad'] . ', ' . $r['depto']; ?> " />
+    <meta property="og:image" itemprop="image" content="<?php echo $r['fotos'][0]['foto']; ?>" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <style>
+        #map {
+            height: 350px;
+            z-index: 20;
+        }
+
+        .leaflet-control {
+            z-index: 200;
+        }
+
+        .leaflet-control {
+            z-index: 20;
+        }
+    </style>
+
+    <link itemprop="thumbnailUrl" href="<?php echo $r['fotos'][0]['foto']; ?>">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+        <link itemprop="url" href="<?php echo $r['fotos'][0]['foto']; ?>">
+    </span>
 
 
 
@@ -82,9 +107,9 @@ require 'controllers/detalleInmuebleController.php'; ?>
                         <div class="compartir">
                             <a class=" btn btn-outline-primary round-0" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=979-<?php echo $co ?>" target="_blank" role="button">Imprimir Ficha</a>
                         </div>
-                            
+
                         <ul class="cont_compart ">
-                        <p>Compartir por :</p>
+                            <p>Compartir por :</p>
                             <li class="tamaño_redes">
                                 <a href="#" class="cont_icon">
                                     <i class="fab fa-facebook-f icono_style" aria-hidden="true"></i>
@@ -255,6 +280,9 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-12">
+
+                                        <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
+                                            <!--
                                             <div class="item mb-4">
                                                 <div class="card" style="">
                                                     <div class="property">
@@ -282,7 +310,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                                     </div>
                                                 </div>
 
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
 
@@ -355,12 +383,28 @@ require 'controllers/detalleInmuebleController.php'; ?>
                             }
                             ?>
                             <div class="col-md-12" style="margin-bottom: 12px;">
+                                <?php if ($r['video'] != "") {
+                                    echo
+                                        '<div class="card">
+                                <div class="card-body">
                                 <h4 class="Lineas_separadora"><strong>Video</strong></h4>
-
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                        <iframe src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-12" style="margin-bottom: 12px;">
+                                ';
+                                } ?>
+                            </div>
+                            <div class="col-md-12">
                                 <h4 class="Lineas_separadora"><strong>Mapa</strong></h4>
-
+                                <div class="card mapa_tamaño">
+                                    <div class="">
+                                        <div id="map" class="w-100"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -381,6 +425,19 @@ require 'controllers/detalleInmuebleController.php'; ?>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
     <script src="./js/corrousel.js"></script>
 
+    <!-- mapa del inmueble -->
+    <script src="mapas/leaflet.js" crossorigin=""></script>
+        <script>
+            var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
+
+            L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+            }).addTo(map);
+
+            L.marker([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>]).addTo(map)
+                .bindPopup('<img src="<?php echo $r['fotos'][0]['foto'] ?>"])" alt="" width="55px" height="auto"><br>Ubicación')
+                .openPopup();
+        </script>
 
 
 </body>

@@ -23,7 +23,11 @@ body {
   p , a  {
     font-family: "Roboto";
   } 
-
+ .imagen_destacadas{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+ }
   #destacadas{
     .info_inmueble{
         display: flex;

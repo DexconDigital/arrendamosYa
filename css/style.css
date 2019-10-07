@@ -7706,6 +7706,11 @@ h1, h2, h3, h4, h5 {
 p, a {
   font-family: "Roboto"; }
 
+.imagen_destacadas {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
 #destacadas .info_inmueble {
   display: flex;
   list-style: none;
@@ -8158,7 +8163,8 @@ p, a {
   border: 0px solid rgba(0, 0, 0, 0.125); }
 
 .margen_card {
-  margin-top: -4%; }
+  margin-top: -4%;
+  text-align: left; }
 
 .synch-carousels {
   position: relative;
