@@ -8018,8 +8018,8 @@ p, a {
   margin-top: 7%; }
   #inf_detalle .compartir {
     position: absolute;
-    margin-left: 77%;
-    margin-top: -3%; }
+    margin-left: 54%;
+    margin-top: 2%; }
   #inf_detalle .conteedor_general {
     display: flex;
     justify-content: space-between;
@@ -8082,7 +8082,8 @@ p, a {
       #inf_detalle .conteedor_general .cont_list .cont_precio {
         padding-right: 0;
         margin-right: 0;
-        list-style: none; }
+        list-style: none;
+        margin-top: -22px; }
         #inf_detalle .conteedor_general .cont_list .cont_precio .precio_style {
           margin-bottom: 0px;
           color: #0b5998;
@@ -8094,7 +8095,7 @@ p, a {
       padding: 0;
       list-style-type: none;
       list-style: none;
-      margin-top: 6%;
+      margin-top: 0%;
       margin-right: 2%; }
       #inf_detalle .conteedor_general .cont_compart .tamaño_redes {
         margin-right: 38px;

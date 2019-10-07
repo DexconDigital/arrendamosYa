@@ -80,10 +80,11 @@ require 'controllers/detalleInmuebleController.php'; ?>
                             </li>
                         </ul>
                         <div class="compartir">
-                            <a class=" btn btn-outline-primary round-0" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=979-<?php echo $co ?>" target="_blank" role="button">Compartir Ficha</a>
+                            <a class=" btn btn-outline-primary round-0" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=979-<?php echo $co ?>" target="_blank" role="button">Imprimir Ficha</a>
                         </div>
-
+                            
                         <ul class="cont_compart ">
+                        <p>Compartir por :</p>
                             <li class="tamaño_redes">
                                 <a href="#" class="cont_icon">
                                     <i class="fab fa-facebook-f icono_style" aria-hidden="true"></i>
@@ -92,13 +93,13 @@ require 'controllers/detalleInmuebleController.php'; ?>
                             </li>
                             <li class="tamaño_redes">
                                 <a href="#" class="cont_icon">
-                                    <i class="fab fa-instagram icono_style"></i>
+                                    <i class="fab fa-twitter icono_style"></i>
 
                                 </a>
                             </li>
                             <li class="tamaño_redes">
                                 <a href="#" class="cont_icon">
-                                    <i class="fab fa-youtube icono_style"></i>
+                                    <i class="fab fa-whatsapp icono_style"></i>
 
                                 </a>
                             </li>
