@@ -105,7 +105,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                             </li>
                         </ul>
                         <div class="compartir">
-                            <a class=" btn btn-outline-primary round-0" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=979-<?php echo $co ?>" target="_blank" role="button">Imprimir Ficha</a>
+                            <a class=" btn btn-outline-primary round-0" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/FichaInmueble.php?reg=979-<?php echo $co ?>" target="_blank" role="button">Imprimir Ficha</a>
                         </div>
 
                         <ul class="cont_compart ">
