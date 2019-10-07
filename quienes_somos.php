@@ -31,10 +31,10 @@
                     <div class="row">
                         <div class="col-md-6">
                             <img src="images/no_image.png" alt="">
-                            <p class="mt-5"><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][0]?></p>
-                            <p class="mt-1"><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][1]?> <?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][2]?></p>
-                            <p class="mt-1"><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][3]?><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][4]?></p>
+                            <p class="mt-5"></p>
+
                         </div>
+
                         <div class="col-md-6">
                             <h2 class="text-center"> Arrendamos Ya SAS</h2>
                             <div class="banner_estadi">
@@ -87,6 +87,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-12">
+                    <p class=""><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0] ?></p>
+                      <p><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1] ?> <?php echo $texto_quienes_somos['quienes_somos']['parrafos'][2] ?><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][3] ?><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][4] ?></p>
                 </div>
             </div>
         </section>
