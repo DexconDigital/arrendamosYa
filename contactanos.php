@@ -37,7 +37,7 @@
                     <div class="col-md-6">
                         <h4> <strong>Contáctanos</strong></h4>
                         <p class="mt-3"> Puedes contactarnos a través de una llamada, un mensaje por
-                            WhatsApp o visitarnos de “horario de atención”.</p>
+                            WhatsApp o visitarnos de <?php echo $datos_contacto ['horario']['horario'] ?>.</p>
                         <ul id="info_list">
                             <li><i class="fas fa-map-marker-alt m-2 color_ubi"></i> <strong><?php echo $datos_contacto['direccion']['direccion'] ?></strong></li>
                             <li><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?>"><i class="fas fa-phone m-2 color_tel "></i> <strong><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></strong></a> </li>

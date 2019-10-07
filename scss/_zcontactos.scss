@@ -22,28 +22,28 @@
         margin-bottom: 2%;
     }
     .color_face{
-        color: #0c50a7;
+        color: $color_azul;
         margin-left: 9px;
     }
     .color_insta{
-        color: #cf3c6d;
+        color: $color_azul;
         margin-left: 9px;
     }
     .color_youtu{
-       color: red;
+        color: $color_azul;
        margin-left: 9px;
     }
     .color_wapp {
-        color: rgb(21, 219, 21);
+        color: gray;
     }
     .color_ubi{
-          color: red;
+        color: gray;
     }
     .color_tel{
            color: gray;
     }
     .color_cel{
-        color: $color_azul;
+        color: gray;
     }
     #info_list{
     list-style: none;

@@ -7977,22 +7977,22 @@ p, a {
   #info_inmo li {
     margin-bottom: 2%; }
   #info_inmo .color_face {
-    color: #0c50a7;
+    color: #0087C9;
     margin-left: 9px; }
   #info_inmo .color_insta {
-    color: #cf3c6d;
+    color: #0087C9;
     margin-left: 9px; }
   #info_inmo .color_youtu {
-    color: red;
+    color: #0087C9;
     margin-left: 9px; }
   #info_inmo .color_wapp {
-    color: #15db15; }
+    color: gray; }
   #info_inmo .color_ubi {
-    color: red; }
+    color: gray; }
   #info_inmo .color_tel {
     color: gray; }
   #info_inmo .color_cel {
-    color: #0087C9; }
+    color: gray; }
   #info_inmo #info_list {
     list-style: none;
     padding-left: 0%; }
