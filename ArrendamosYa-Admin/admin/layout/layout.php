@@ -170,17 +170,7 @@ $imagen_inicio = $usuario[11];
                     <i class="fas fa-wrench colo_ico"></i>
                     <span>Configuación</span></a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-user colo_ico"></i>
-                    <span> Asesores </span></a>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="asesor.php">Crear asesor</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="lista_asesores.php">Lista de asesores</a>
-                </div>
-            </li>
+            
         </ul>
 
 

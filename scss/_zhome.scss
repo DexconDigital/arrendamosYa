@@ -20,6 +20,16 @@ body {
     font-family: "CaviarDreams";
   }
 
+  .cont_redes{
+    margin-left: 14%;
+    @include media-breakpoint-up(md){
+      margin-left: 37%;
+    }
+    @include media-breakpoint-up(lg){
+      margin-left: 41%;
+    }
+  }
+
   p , a  {
     font-family: "Roboto";
   } 
@@ -27,6 +37,25 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
+ }
+ .cont_detalle_not{
+   margin-top: 28%;
+   @include media-breakpoint-up(md){
+    margin-top: 16%;
+   }
+   @include media-breakpoint-up(lg){
+    margin-top: 9%;
+   }
+  
+ 
+ }
+ .boton_index_not{
+   background-color: $color_azul_oscuro;
+   color: white;
+  
+ }
+ .boton_index_not:hover{
+   color:white;
  }
   #destacadas{
     .info_inmueble{
@@ -82,6 +111,13 @@ body {
         background-position: center;
         position: relative;
         color: #fff;
+        background-size: cover;
+        @include media-breakpoint-up(md){
+          background: url(../images/banner_estadisticas_home.png) no-repeat;
+          background-position: center;
+          position: relative;
+          color: #fff;
+        }
 
         .banner_estadi:before{
             position: absolute;
@@ -137,9 +173,14 @@ body {
         text-align: center;
     }
     img{
-    object-fit: contain;
-    width: 50%;
-    height: 50%;
+      object-fit: contain;
+      width: 80%;
+      height: 50%;
+    @include media-breakpoint-up(md){
+      object-fit: contain;
+      width: 85%;
+      height: 50%;
+    }
     }
     p{
         text-align: justify;
@@ -191,10 +232,45 @@ body {
 #footer_copy{
   .row{
     justify-content: space-between;
+    margin-left: 0px;
+    margin-bottom: 5%;
+
+    @include media-breakpoint-up(md){
+      margin-left: -15px;
+      margin-bottom: 0%;
+    }
     
   }
   a{
     text-decoration: none;
+  }
+}
+.politicas{
+  margin-left: 93px;
+  margin-top: -38px;
+  @include media-breakpoint-up(md){
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+.dimencion{
+  margin-top: 25%;
+  @include media-breakpoint-up(md){
+    margin-top: 0%;
+  }
+}
+#buscador{
+  .expacio{
+    margin-top: 0rem !important;
+    @include media-breakpoint-up(md){
+      margin-top: 1rem !important;
+    }
+  }
+  .container{
+    padding: 3%;
+    @include media-breakpoint-up(md){
+      padding: 0%;
+    }
   }
 }
 
@@ -206,12 +282,15 @@ body {
   font-size: 12px;
   cursor: pointer;
   position: fixed;
-  bottom: 20px;
+  bottom: 18px;
   right: 20px;
   -webkit-box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
   -moz-box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
   box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
   z-index: 2;
+  @include media-breakpoint-up(md){
+    bottom: 50px;
+  }
 }
 .color_gris{
   background-color: #808184;
@@ -221,6 +300,13 @@ body {
   background-color: $color_azul_oscuro;
   color: white;
 }
+#conte_posiciion{
+  
+  @include media-breakpoint-up(md){
+    position: absolute;
+  }
+} 
+
    
 
 

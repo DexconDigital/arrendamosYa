@@ -4,13 +4,13 @@ require_once("conexion.php");
 include 'layout/layout.php';
 $id=$_GET["id"];
             $con=Conect();
-            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 9";
+            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 11";
             $sql=mysqli_query($con,$qry);
             $res=  mysqli_fetch_array($sql) ; 
 ?>
 <style>
 .color_boton{
-    background-color: #99cf16;
+    background-color: #24619c;
     color: white;
     
 }
@@ -25,8 +25,8 @@ $id=$_GET["id"];
     background-color: white;
 }
 input[type]:focus{
-    border-color: #99cf16; !important;
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #99cf16; !important;
+    border-color: #24619c; !important;
+    box-shadow: 0 1px 1px rgb(36, 97, 156)inset, 0 0 8px #24619c; !important;
     outline: 0 none;
     }
 

@@ -3197,10 +3197,10 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9); }
+  color: #24619c; }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1); }
+  color: #24619c;
+  border-color: rgba(0, 139, 200, 0.39); }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 .navbar-light .navbar-text {
@@ -3225,9 +3225,6 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff; }
-.navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.1); }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 .navbar-dark .navbar-text {
@@ -7787,6 +7784,15 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: "CaviarDreams"; }
 
+.cont_redes {
+  margin-left: 14%; }
+  @media (min-width: 768px) {
+    .cont_redes {
+      margin-left: 37%; } }
+  @media (min-width: 992px) {
+    .cont_redes {
+      margin-left: 41%; } }
+
 p, a {
   font-family: "Roboto"; }
 
@@ -7794,6 +7800,22 @@ p, a {
   object-fit: cover;
   width: 100%;
   height: 100%; }
+
+.cont_detalle_not {
+  margin-top: 28%; }
+  @media (min-width: 768px) {
+    .cont_detalle_not {
+      margin-top: 16%; } }
+  @media (min-width: 992px) {
+    .cont_detalle_not {
+      margin-top: 9%; } }
+
+.boton_index_not {
+  background-color: #0b5998;
+  color: white; }
+
+.boton_index_not:hover {
+  color: white; }
 
 #destacadas .info_inmueble {
   display: flex;
@@ -7840,7 +7862,14 @@ p, a {
   background: url(../images/banner_estadisticas_home.png) no-repeat;
   background-position: center;
   position: relative;
-  color: #fff; }
+  color: #fff;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .estadisticas {
+      background: url(../images/banner_estadisticas_home.png) no-repeat;
+      background-position: center;
+      position: relative;
+      color: #fff; } }
   .estadisticas .banner_estadi:before {
     position: absolute;
     content: "";
@@ -7883,8 +7912,13 @@ p, a {
     text-align: center; }
   #inmobiliaria_historia img {
     object-fit: contain;
-    width: 50%;
+    width: 80%;
     height: 50%; }
+    @media (min-width: 768px) {
+      #inmobiliaria_historia img {
+        object-fit: contain;
+        width: 85%;
+        height: 50%; } }
   #inmobiliaria_historia p {
     text-align: justify; }
   #inmobiliaria_historia .footer_redes {
@@ -7919,9 +7953,40 @@ p, a {
         color: #0b5998; }
 
 #footer_copy .row {
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-left: 0px;
+  margin-bottom: 5%; }
+  @media (min-width: 768px) {
+    #footer_copy .row {
+      margin-left: -15px;
+      margin-bottom: 0%; } }
 #footer_copy a {
   text-decoration: none; }
+
+.politicas {
+  margin-left: 93px;
+  margin-top: -38px; }
+  @media (min-width: 768px) {
+    .politicas {
+      margin-left: 0px;
+      margin-top: 0px; } }
+
+.dimencion {
+  margin-top: 25%; }
+  @media (min-width: 768px) {
+    .dimencion {
+      margin-top: 0%; } }
+
+#buscador .expacio {
+  margin-top: 0rem !important; }
+  @media (min-width: 768px) {
+    #buscador .expacio {
+      margin-top: 1rem !important; } }
+#buscador .container {
+  padding: 3%; }
+  @media (min-width: 768px) {
+    #buscador .container {
+      padding: 0%; } }
 
 .subir {
   display: none;
@@ -7931,12 +7996,15 @@ p, a {
   font-size: 12px;
   cursor: pointer;
   position: fixed;
-  bottom: 20px;
+  bottom: 18px;
   right: 20px;
   -webkit-box-shadow: -2px 2px 5px 3px #bdbdbd;
   -moz-box-shadow: -2px 2px 5px 3px #bdbdbd;
   box-shadow: -2px 2px 5px 3px #bdbdbd;
   z-index: 2; }
+  @media (min-width: 768px) {
+    .subir {
+      bottom: 50px; } }
 
 .color_gris {
   background-color: #808184;
@@ -7945,6 +8013,10 @@ p, a {
 .color_azul {
   background-color: #0b5998;
   color: white; }
+
+@media (min-width: 768px) {
+  #conte_posiciion {
+    position: absolute; } }
 
 #buscador {
   position: relative;
@@ -7956,7 +8028,13 @@ p, a {
     background-color: #0087C9; }
 
 #imagen_cont {
-  margin-top: 9%; }
+  margin-top: 27%; }
+  @media (min-width: 768px) {
+    #imagen_cont {
+      margin-top: 16%; } }
+  @media (min-width: 992px) {
+    #imagen_cont {
+      margin-top: 9%; } }
   #imagen_cont p {
     text-align: justify; }
   #imagen_cont img {
@@ -7964,6 +8042,31 @@ p, a {
     width: 100%; }
   #imagen_cont h4 {
     color: #0b5998; }
+  @media (min-width: 768px) {
+    #imagen_cont .cont_img_estadis {
+      margin-top: 18%; } }
+  @media (min-width: 992px) {
+    #imagen_cont .cont_img_estadis {
+      margin-top: 0%; } }
+
+@media (min-width: 768px) {
+  .cont_impoteca {
+    position: absolute;
+    margin-top: -66%;
+    margin-left: 13%; } }
+@media (min-width: 992px) {
+  .cont_impoteca {
+    margin-top: 0%; } }
+
+@media (min-width: 768px) {
+  .cont_juridica {
+    position: absolute;
+    margin-left: 122%;
+    margin-top: -67%; } }
+@media (min-width: 992px) {
+  .cont_juridica {
+    margin-top: 0%;
+    margin-left: 22%; } }
 
 #servicios i {
   color: #0087C9;
@@ -7981,11 +8084,18 @@ p, a {
   position: absolute; }
 
 #cont_inmuebles {
-  margin-top: 9%; }
+  margin-top: 32%; }
+  @media (min-width: 768px) {
+    #cont_inmuebles {
+      margin-top: 16%; } }
+  @media (min-width: 992px) {
+    #cont_inmuebles {
+      margin-top: 9%; } }
   #cont_inmuebles .row {
     border-color: black; }
-  #cont_inmuebles .form-group {
-    margin-left: -2%; }
+  @media (min-width: 768px) {
+    #cont_inmuebles .form-group {
+      margin-left: -2%; } }
   #cont_inmuebles .btn {
     color: #fff;
     background-color: #0b5998;
@@ -7995,12 +8105,20 @@ p, a {
   #cont_inmuebles .fonto_buscador {
     background-color: #EBEDEF; }
   #cont_inmuebles .cont_ficha {
-    padding-left: 3%; }
+    padding-left: 0%; }
+    @media (min-width: 768px) {
+      #cont_inmuebles .cont_ficha {
+        padding-left: 3%; } }
   #cont_inmuebles img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute; }
+    width: 104%;
+    height: 100%; }
+    @media (min-width: 768px) {
+      #cont_inmuebles img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute; } }
   #cont_inmuebles .contenedor_ficha {
     margin-bottom: 0px; }
   #cont_inmuebles .imagen_stile {
@@ -8044,7 +8162,13 @@ p, a {
       margin-right: 0.5em; }
 
 #cont_blog {
-  margin-top: 9%; }
+  margin-top: 29%; }
+  @media (min-width: 768px) {
+    #cont_blog {
+      margin-top: 17%; } }
+  @media (min-width: 992px) {
+    #cont_blog {
+      margin-top: 9%; } }
   #cont_blog .btn {
     background-color: #0b5998;
     color: white; }
@@ -8065,6 +8189,14 @@ p, a {
     color: #0087C9; }
   #info_inmo li {
     margin-bottom: 2%; }
+    #info_inmo li strong {
+      font-size: 13px; }
+      @media (min-width: 768px) {
+        #info_inmo li strong {
+          font-size: 13px; } }
+      @media (min-width: 992px) {
+        #info_inmo li strong {
+          font-size: 17px; } }
   #info_inmo .color_face {
     color: #0087C9;
     margin-left: 9px; }
@@ -8087,7 +8219,13 @@ p, a {
     padding-left: 0%; }
   #info_inmo .redes {
     list-style: none;
-    padding-left: 71px; }
+    padding-left: 101px; }
+    @media (min-width: 768px) {
+      #info_inmo .redes {
+        padding-left: 71px; } }
+    @media (min-width: 992px) {
+      #info_inmo .redes {
+        padding-left: 139px; } }
     #info_inmo .redes i {
       border-radius: 0;
       padding: 10px;

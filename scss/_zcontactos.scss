@@ -12,6 +12,7 @@
         color: white;
         
     }
+
     .color_poltica{
         color:$color_azul_oscuro;
     }
@@ -20,6 +21,15 @@
     }
     li{
         margin-bottom: 2%;
+        strong{
+            font-size: 13px;
+            @include media-breakpoint-up(md){
+            font-size: 13px;
+            }
+            @include media-breakpoint-up(lg){
+                font-size: 17px;
+            }
+        }
     }
     .color_face{
         color: $color_azul;
@@ -51,7 +61,13 @@
     }
     .redes{
             list-style: none;
-            padding-left: 71px;
+            padding-left: 101px;
+            @include media-breakpoint-up(md){
+                padding-left: 71px;
+            }
+            @include media-breakpoint-up(lg){
+                padding-left: 139px;
+            }
             
             i{
                 border-radius: 0;

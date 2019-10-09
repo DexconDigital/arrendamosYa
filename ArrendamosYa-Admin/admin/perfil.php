@@ -11,15 +11,15 @@ $usuario =  mysqli_fetch_array($sql);
 
 <style>
     input[type]:focus {
-        border-color: #99cf16;
+        border-color: #24619c;
          !important;
-        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #99cf16;
+         box-shadow: 0 1px 1px rgb(36, 97, 156)inset, 0 0 8px #24619c; !important;
          !important;
         outline: 0 none;
     }
 
     .color_boton {
-        background-color: #99cf16;
+        background-color: #24619c;
         color: white;
 
     }

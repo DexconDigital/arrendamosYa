@@ -29,7 +29,7 @@
             <div class="container">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 cont_img_estadis">
                             <img src="images/no_image.png" alt="">
                             <p class="mt-5"></p>
 
@@ -47,14 +47,14 @@
                                                     <h4> <strong>5</strong> </h4>
                                                     <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][0] ?></strong></h5>
                                                 </div>
-                                                <div class=" espacio_div col-xl-12 col-md-3 col-12 text-center mb-3">
+                                                <div class=" espacio_div col-xl-12 col-md-12 col-12 text-center mb-3">
                                                     <div>
                                                         <h2 id="counter-propertys"></h2>
                                                         <h4> <strong></strong> </h4>
                                                         <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][1] ?></strong></h5>
                                                     </div>
                                                 </div>
-                                                <div class=" espacio_div col-xl-12  col-md-3 col-12 text-center mb-3">
+                                                <div class=" espacio_div col-xl-12  col-md-12 col-12 text-center mb-3">
                                                     <div>
 
                                                         <h2 id="counter-rent"></h2>
@@ -62,7 +62,7 @@
                                                         <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][2] ?></strong> </h5>
                                                     </div>
                                                 </div>
-                                                <div class=" espacio_div col-xl-12  col-md-3 col-12 text-center mb-3">
+                                                <div class=" espacio_div col-xl-12  col-md-12 col-12 text-center mb-3">
                                                     <div>
 
                                                         <h2 id="counter-sale"></h2>
@@ -70,7 +70,7 @@
                                                         <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][3] ?></strong> </h5>
                                                     </div>
                                                 </div>
-                                                <div class=" espacio_div col-xl-12  col-md-3 col-12 text-center mb-3">
+                                                <div class=" espacio_div col-xl-12  col-md-12 col-12 text-center mb-3">
                                                     <div>
 
                                                         <h2 id="counter-sale-rent"></h2>
@@ -101,9 +101,9 @@
                 <div class="d-flex justify-content-between col-md-12 row ">
                     <!--Cuadro arriendos -->
                     <div class="col-lg-4 col-md-6 col-12 row ">
-                        <div class="col-xl-3 col-md-3 col-4">
+                        <div class="col-xl-3 col-md-2 col-2">
                         </div>
-                        <div class="col-xl-9 col-md-9 col-8">
+                        <div class="col-xl-9 col-md-10 col-10">
                             <div class="col-xl-10 col-md-3 col-4 text-center ">
                                 <i class="fas fa-tags"></i>
                             </div>
@@ -117,10 +117,10 @@
                     </div>
                     <!--Cuadro ventas -->
                     <div class="col-lg-4 col-md-6 col-12 row ">
-                        <div class="col-xl-3 col-md-3 col-4">
+                        <div class="col-xl-3 col-md-2 col-2">
 
                         </div>
-                        <div class="col-xl-9 col-md-9 col-8">
+                        <div class="col-xl-9 col-md-10 col-10">
                             <div class="col-xl-12 col-md-3 col-4 text-center">
                                 <i class="fas fa-sign"></i>
                             </div>
@@ -134,10 +134,10 @@
                     </div>
                     <!--Cuadro Avaluos -->
                     <div class="col-lg-4 col-md-6 cont_avaluos col-12 row ">
-                        <div class="col-xl-3 col-md-3 col-4">
+                        <div class="col-xl-3 col-md-2 col-2">
 
                         </div>
-                        <div class="col-xl-9 col-md-9 col-8">
+                        <div class="col-xl-9 col-md-10 col-10">
                             <div class="col-xl-12 col-md-3 col-4 text-center">
                                 <i class="fas fa-balance-scale"></i>
                             </div>
@@ -155,9 +155,9 @@
                 <div class="d-flex justify-content-between col-md-12 row ">
                     <!--Cuadro administracion -->
                     <div class="col-lg-4 col-md-6 col-12 row ">
-                        <div class="col-xl-3 col-md-3 col-4">
+                        <div class="col-xl-3 col-md-2 col-2">
                         </div>
-                        <div class="col-xl-9 col-md-9 col-8">
+                        <div class="col-xl-9 col-md-10 col-10">
                             <div class="col-xl-10 col-md-3 col-4 text-center ">
                                 <i class="fas fa-user-tie"></i>
                             </div>
@@ -171,10 +171,10 @@
                     </div>
                     <!--Cuadro hipotecas -->
                     <div class="col-lg-4 col-md-6 col-12 row ">
-                        <div class="col-xl-3 col-md-3 col-4">
+                        <div class="col-xl-3 col-md-2 col-2">
 
                         </div>
-                        <div class="col-xl-9 col-md-9 col-8">
+                        <div class="col-xl-9 col-md-10 col-10 cont_impoteca">
                             <div class="col-xl-12 col-md-3 col-4 text-center">
                                 <i class="fas fa-hand-holding-usd"></i>
                             </div>
@@ -188,10 +188,10 @@
                     </div>
                     <!--Cuadro asesoria_juridica -->
                     <div class="col-lg-4 col-md-6 cont_avaluos col-12 row ">
-                        <div class="col-xl-3 col-md-3 col-4">
+                        <div class="col-xl-3 col-md-2 col-2">
 
                         </div>
-                        <div class="col-xl-9 col-md-9 col-8">
+                        <div class="col-xl-9 col-md-10 col-10 cont_juridica">
                             <div class="col-xl-12 col-md-3 col-4 text-center">
                                 <i class="fas fa-gavel"></i>
                             </div>

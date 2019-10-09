@@ -29,8 +29,8 @@ $sql = mysqli_query($con, $qry);
             echo '<tr>
                                 <td>' . $res["id"] . '</td>
                                 <td>' . $res["nombre"] . '</td>
-                                <td><a href="actualizarpublicacion.php?id=' . $res["id"] . '"><i style="color:#99cf16;" class="fas fa-edit"></i></a></td>
-                                <td><a type=""  data-toggle="modal" data-target="#exampleModal" "><i style="color:#99cf16;"class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="actualizarpublicacion.php?id=' . $res["id"] . '"><i style="color:#24619c;" class="fas fa-edit"></i></a></td>
+                                <td><a type=""  data-toggle="modal" data-target="#exampleModal" "><i style="color:#24619c;"class="fas fa-trash-alt"></i></a></td>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                          <div class="modal-dialog" role="document">
                           <div class="modal-content">

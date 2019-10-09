@@ -1,4 +1,5 @@
-<?php require 'variables/variables.php'; ?>
+<?php require 'variables/variables.php';
+require 'controllers/noticiasController.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -29,39 +30,15 @@
             <div class="container">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="card" style="width: 22rem;">
-                                <img src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Titulo noticia</h5>
-                                    <p>Fecha D/M/A</p>
-                                    <p class="card-text">Descripción de la noticia</p>
-                                    <a href="#" class="btn">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card" style="width: 22rem;">
-                                <img src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Titulo noticia</h5>
-                                    <p>Fecha D/M/A</p>
-                                    <p class="card-text">Descripción de la noticia</p>
-                                    <a href="#" class="btn">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card" style="width: 22rem;">
-                                <img src="images/no_image.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Titulo noticia</h5>
-                                    <p>Fecha D/M/A</p>
-                                    <p class="card-text">Descripción de la noticia</p>
-                                    <a href="#" class="btn">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
+
+                    <?php if(isset($noticias_array)){
+                        modelo_noticia($noticias_array);
+                    }else{
+                        echo '<div class="col 12">
+                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                        </div>';
+                    }
+                    ?>
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@
             </div>
         </section>
 
-        <section id="info_inmo">
+        <section id="info_inmo"> 
             <div class="container ">
                 <div class="row col-md-12">
                     <div class="col-md-6">
@@ -51,7 +51,7 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h4 class="mb-3"> <strong>Formulario de contacto</strong></h4>
+                        <h4 class="mb-3"> <strong>Formulario de Contacto</strong></h4>
                         <div class="col-lg-12 col-md-12 col-12 p-0">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Nombre y Apellido">

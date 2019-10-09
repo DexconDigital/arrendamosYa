@@ -4,8 +4,8 @@
 <section id="footer_copy">
     <div class="container ">
         <div class="row">
-            <p>Copyright © 2019 <a target="_blank" href="https://www.dexcondigital.com">Dexcon Digital</a>Todos los derechos reservados.</p>
-            <p> <a href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf" download="Politica de tratamiento de infromación.pdf">Política de tratamiento de datos</a></p>
+            <p>Copyright © 2019 <a target="_blank" href="https://www.dexcondigital.com">Dexcon Digital.</a> Todos los derechos reservados.</p>
+            <p class="politicas"><a href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf" download="Politica de tratamiento de infromación.pdf">Política de tratamiento de datos</a></p>
         </div>
     </div>
 </section>
@@ -75,9 +75,10 @@
                                     <textarea name="mensaje" placeholder="Mensajes" class="form-control" id="mensaje" rows="6" requiered=""></textarea>
                                 </div>
                                 <div class="form-group col-12">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" requiered="">
-                                        <label class="form-check-label" for="exampleCheck1">Acepto <a class="politicas_contac" href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf" download="Politica de tratamiento de infromación.pdf" class="a-terminos" target="blank">la política y tratamiento de datos</a></label>
+                                    <div class="form-check custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ejemplo">
+                                        <input type="checkbox" class="form-check-input" id="ejemplo" requiered="">
+                                        <label class="custom-control-label" for="ejemplo">Acepto <a class="politicas_contac" href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf"  class="a-terminos" target="blank">la política y tratamiento de datos.</a></label>
                                     </div>
                                 </div>
                                 <div class="form-group col-12">

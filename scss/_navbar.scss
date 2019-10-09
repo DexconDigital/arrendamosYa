@@ -211,20 +211,21 @@
       &.disabled {
         color: $navbar-light-disabled-color;
       }
-    }
+    } 
 
     .show > .nav-link,
     .active > .nav-link,
     .nav-link.show,
     .nav-link.active {
-      color: $navbar-light-active-color;
+      color: #24619c;
     }
   }
 
   .navbar-toggler {
-    color: $navbar-light-color;
-    border-color: $navbar-light-toggler-border-color;
+    color: #24619c;
+    border-color: rgba(0, 139, 200, 0.39);
   }
+ 
 
   .navbar-toggler-icon {
     background-image: $navbar-light-toggler-icon-bg;
@@ -274,8 +275,7 @@
   }
 
   .navbar-toggler {
-    color: $navbar-dark-color;
-    border-color: $navbar-dark-toggler-border-color;
+    
   }
 
   .navbar-toggler-icon {

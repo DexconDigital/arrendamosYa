@@ -111,7 +111,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                         <ul class="cont_compart ">
                             <p>Compartir por :</p>
                             <li class="tamaño_redes">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.arrendamosya.com%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank"  class="cont_icon">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.arrendamosya.com%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank" class="cont_icon">
                                     <i class="fab fa-facebook-f icono_style" aria-hidden="true"></i>
 
                                 </a>
@@ -123,7 +123,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                 </a>
                             </li>
                             <li class="tamaño_redes">
-                            <a target="_blank" href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www.arrendamosya.com/detalleInmueble.php?codigo%3d' . $co ?>" class="cont_icon">
+                                <a target="_blank" href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www.arrendamosya.com/detalleInmueble.php?codigo%3d' . $co ?>" class="cont_icon">
                                     <i class="fab fa-whatsapp icono_style"></i>
 
                                 </a>
@@ -183,9 +183,9 @@ require 'controllers/detalleInmuebleController.php'; ?>
                 <!-- Thumbnail navigation -->
                 <div class="swiper-container nav-slider loading">
                     <div class="swiper-wrapper" role="navigation">
-                    <?php
+                        <?php
                         if (isset($r['fotos'])) {
-                            for ($i = 1; $i < count($r['fotos']); $i++) {
+                            for ($i = 0; $i < count($r['fotos']); $i++) {
                                 echo ' <div class="swiper-slide">
                                         <figure class="slide-bgimg" style="background-image:url(' . $r['fotos'][$i]['foto'] . ')">
                                           <img src="' . $r['fotos'][$i]['foto'] . '" class="entity-img" />
@@ -224,7 +224,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
             <div class="container ">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-4  ">
+                        <div id="conte_posiciion" class="col-lg-4 col-md-4">
                             <div class="text-center">
                                 <div>
                                     <h5 class="titulo_asesor" class="mb-0"> <strong>Contacto con el asesor</strong></h5>
@@ -255,35 +255,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                         <div class="col-12">
 
                                             <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
-                                            <!--
-                                            <div class="item mb-4">
-                                                <div class="card" style="">
-                                                    <div class="property">
-                                                        <a href="detalle_inmueble.php?co=' . $codigo . '">
-                                                            <div class="property-image">
-                                                                <img class="alto_img" alt="" src="images/no_image.png"></div>
-                                                            <div class="overlay">
 
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12 margen_card">
-                                                        <div class="col-12">
-                                                            <p class="mb-1"><b>Tipo inmueble / Gestión</b></p>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i> <strong>Bario / ciudad</strong></p>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <p class="mb-1"> <small> <strong>Codigo</strong>
-
-                                                                </small>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div> -->
                                         </div>
                                     </div>
 
@@ -291,74 +263,75 @@ require 'controllers/detalleInmuebleController.php'; ?>
                             </div>
                         </div>
 
-                        <div class="col-md-8 row cont_caract">
-                            <!-- descripcion -->
-                            <div class="col-md-6" style="margin-bottom: 12px;">
-                                <h4 class="Lineas_separadora"><strong>Características</strong></h4>
-                                <ul class="pl-4">
-                                    <li>Código: <?php echo $co; ?></li>
-                                    <li>Alcobas: <?php echo $alcobas; ?></li>
-                                    <li>Baños: <?php echo $banios; ?></li>
-                                    <li>Área Construida: <?php echo $area_construida; ?>m<sup>2<sup></li>
-                                    <li>Área Privada: <?php echo $area_privada; ?>m<sup>2<sup></li>
-                                    <li>Garaje: <?php echo $garaje; ?></li>
-                                    <li>Estrato: <?php echo $estrato; ?></li>
-                                    <li>Edad Inmueble: <?php echo $edad_inmueble; ?> años</li>
-                                    <?php if ($administracion != "") {
-                                        echo '<li>Administración: $' . $administracion . '</li>';
-                                    } ?>
-                                </ul>
-                            </div>
-                            <!-- fin de descripcion -->
-                            <?php
-                            if (count($r['caracteristicasInternas']) > 0) {
-                                echo
-                                    '<div class="col-md-6" style="margin-bottom: 12px;">
+                        <div class="col-lg-8 col-md-12 cont_caract">
+                            <div class="row">
+                                <!-- descripcion -->
+                                <div class="col-md-6" style="margin-bottom: 12px;">
+                                    <h4 class="Lineas_separadora"><strong>Características</strong></h4>
+                                    <ul class="pl-4">
+                                        <li>Código: <?php echo $co; ?></li>
+                                        <li>Alcobas: <?php echo $alcobas; ?></li>
+                                        <li>Baños: <?php echo $banios; ?></li>
+                                        <li>Área Construida: <?php echo $area_construida; ?>m<sup>2<sup></li>
+                                        <li>Área Privada: <?php echo $area_privada; ?>m<sup>2<sup></li>
+                                        <li>Garaje: <?php echo $garaje; ?></li>
+                                        <li>Estrato: <?php echo $estrato; ?></li>
+                                        <li>Edad Inmueble: <?php echo $edad_inmueble; ?> años</li>
+                                        <?php if ($administracion != "") {
+                                            echo '<li>Administración: $' . $administracion . '</li>';
+                                        } ?>
+                                    </ul>
+                                </div>
+                                <!-- fin de descripcion -->
+                                <?php
+                                if (count($r['caracteristicasInternas']) > 0) {
+                                    echo
+                                        '<div class="col-md-6" style="margin-bottom: 12px;">
                                     <h4 class="Lineas_separadora"><strong>Características Internas</strong></h4>
                                         <ul>';
-                                for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
-                                    $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
-                                    echo '<li>' . $caracteristicas . '</li>';
-                                }
-                                echo  '</ul>
+                                    for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>
                                 </div>
                             ';
-                            }
-                            ?>
-                            <?php
-                            if (count($r['caracteristicasExternas']) > 0) {
-                                echo
-                                    '<div class="col-md-6 row cont_externas">
+                                }
+                                ?>
+                                <?php
+                                if (count($r['caracteristicasExternas']) > 0) {
+                                    echo
+                                        '<div class="col-md-6 row cont_externas">
                                     <h4 class="Lineas_separadora"><strong>Características Externas</strong></h4>
                                         <ul>';
-                                for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
-                                    $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
-                                    echo '<li>' . $caracteristicas . '</li>';
-                                }
-                                echo  '</ul>
+                                    for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>
                                 </div>
                             ';
-                            }
-                            ?>
-                            <?php
-                            if (count($r['caracteristicasAlrededores']) > 0) {
-                                echo
-                                    '<div class="col-md-6" style="margin-bottom: 12px;">
+                                }
+                                ?>
+                                <?php
+                                if (count($r['caracteristicasAlrededores']) > 0) {
+                                    echo
+                                        '<div class="col-md-6" style="margin-bottom: 12px;">
                                     <h4 class="Lineas_separadora"><strong>Características de los alrededores</strong></h4>
                                         <ul>';
-                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
-                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
-                                    echo '<li>' . $caracteristicas . '</li>';
-                                }
-                                echo  '</ul>
+                                    for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>
                                 </div>
                             ';
-                            }
-                            ?>
-                            <div class="col-md-12" style="margin-bottom: 12px;">
-                                <?php if ($r['video'] != "") {
-                                    echo
-                                        '<div class="card">
+                                }
+                                ?>
+                                <div class="col-md-12" style="margin-bottom: 12px;">
+                                    <?php if ($r['video'] != "") {
+                                        echo
+                                            '<div class="card">
                                 <div class="card-body">
                                 <h4 class="Lineas_separadora"><strong>Video</strong></h4>
                                     <div class="row">
@@ -369,13 +342,14 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                 </div>
                             </div>
                                 ';
-                                } ?>
-                            </div>
-                            <div class="col-md-12">
-                                <h4 class="Lineas_separadora"><strong>Mapa</strong></h4>
-                                <div class="card mapa_tamaño">
-                                    <div class="">
-                                        <div id="map" class="w-100"></div>
+                                    } ?>
+                                </div>
+                                <div class="col-md-12">
+                                    <h4 class="Lineas_separadora"><strong>Mapa</strong></h4>
+                                    <div class="card mapa_tamaño">
+                                        <div class="">
+                                            <div id="map" class="w-100"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -401,7 +375,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
     <!-- mapa del inmueble -->
     <script src="mapas/leaflet.js" crossorigin=""></script>
     <script>
-        var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
+        var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 20);
 
         L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
             attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'

@@ -54,9 +54,14 @@ if($destino != $comparador_fotos && $destinos == $comparador_archivo){
     $sql=mysqli_query($con,$qry);  
 
     if(!$sql){
-        echo 'No se logro actualizar';
+        echo 'No se logro actualizar la foto';
+        echo $ruta , $destino;
+        die();
     }else{
+        echo $ruta , $destino;
+        die();
         header("Location: lista-publicaciones.php");
+       
     }
 }
 // actualizar archivo pero no imagen
@@ -68,7 +73,7 @@ if($destino == $comparador_fotos && $destinos != $comparador_archivo){
     $sql=mysqli_query($con,$qry);  
 
     if(!$sql){
-        echo 'No se logro actualizar';
+        echo 'No se logro actualizar el archivo';
     }else{
         header("Location: lista-publicaciones.php");
     }
@@ -78,10 +83,10 @@ if($destino != $comparador_fotos && $destinos != $comparador_archivo){
     copy($rutas,$destinos);
     copy($ruta,$destino);
     $con = Conect();
-    $qry=("UPDATE `noticias` SET `imagen` = '$destino', `archivo` = '$destino' WHERE `noticias`.`id` = '$id'");
+    $qry=("UPDATE `noticias` SET `imagen` = '$destino', `archivo` = '$destinos' WHERE `noticias`.`id` = '$id'");
     $sql=mysqli_query($con,$qry);  
     if(!$sql){
-        echo 'No se logro actualizar';
+        echo 'No se logro actualizar las dos cosas';
     }else{
         header("Location: lista-publicaciones.php");
     }

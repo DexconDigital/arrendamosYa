@@ -1,5 +1,6 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
+require 'controllers/noticiasController.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -30,7 +31,7 @@ require 'controllers/indexController.php';
         <!-- Slider -->
 
         <section id="carousel_inicio">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide dimencion" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/slide_1.jpg" class="d-block w-100" alt="...">
@@ -59,24 +60,24 @@ require 'controllers/indexController.php';
             <div class="container">
                 <div class="col-md-12 ">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-12  form-group pr-md-0 mt-3">
+                        <div class="col-lg-3 col-md-3 col-12  form-group pr-md-0 expacio ">
                             <input type="text" class="form-control " id="codigo_buscar" placeholder="Código">
                         </div>
-                        <div class="col-lg-3 col-md-34 col-12 form-group pr-md-0 mt-3">
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0 expacio ">
                             <div class="select w-100">
                                 <select id="ciudad_buscar" class="form-control">
                                     <option selected="" value="0">Ciudad</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0 mt-3">
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0 expacio ">
                             <div class="select w-100">
                                 <select id="barrio_buscar" class="form-control">
                                     <option selected="" value="0">Barrio</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0 mt-3">
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0 expacio ">
                             <div class="select w-100">
                                 <select id="tipo_gestion_buscar" class="form-control">
                                     <option selected="" value="0">Tipo de Gestión</option>
@@ -107,23 +108,23 @@ require 'controllers/indexController.php';
                         <div class="col-lg-3 col-md-6 col-12 form-group pr-md-0">
                             <input type="text" class="form-control " id="area_maxima_buscar" placeholder=" Área Máxima">
                         </div>
-                        <div class="col-lg-3  col-md-4 form-group pr-md-0">
+                        <div class="col-lg-3  col-md-6 form-group pr-md-0">
                             <input type="text" id='precio_minimo_buscar' class="form-control  select_color" placeholder="Precio Mínimo">
                         </div>
-                        <div class="col-lg-3  col-md-4 form-group pr-md-0">
+                        <div class="col-lg-3  col-md-6 form-group pr-md-0">
                             <input type="text" id='precio_maximo_buscar' class="form-control  select_color" placeholder="Precio Máximo">
                         </div>
                         <div class="col-lg-3 col-md-6 col-12 form-group pr-md-0">
 
                         </div>
-                        <div class="col-12 col-md-6 form-group pr-md-0">
+                        <div class="col-12 col-md-12 form-group pr-md-0">
                             <button class="btn btn-md btn-block" type="button" data-toggle="collapse" id="buscar">
                                 <span> Búscar</span>
                             </button>
                         </div>
                         <div class="col-lg-3 col-md-4 col-12 form-group pr-md-0">
 
-                        </div>
+                        </div> 
 
                     </div>
                 </div>
@@ -135,7 +136,7 @@ require 'controllers/indexController.php';
         <section id="destacadas">
             <div class="container mt-3 ">
                 <div class="col-12 text-center">
-                    <h2>Propiedades destacadas</h2>
+                    <h2>Propiedades Destacadas</h2>
                 </div>
                 <div class="col-md-12 mt-4">
                     <div class="row">
@@ -211,13 +212,13 @@ require 'controllers/indexController.php';
                             <img src="images/documentos.png" alt="">
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 text-center">
-                            <h2> Formularios aseguradoras</h2>
+                            <h2> Formularios Aseguradoras</h2>
                             <div class="col-12 mt-3">
                                 <ul class="menu">
                                     <li class="menu-item"><a class="option_foot" href="/">Libertador Persona Jurídica</a></li>
                                     <li class="menu-item"><a class="option_foot" href="/">Libertador Persona Natural</a></li>
                                     <li class="menu-item"><a class="option_foot" href="/">Sura Persona Natural</a></li>
-                                    <li class="menu-item"><a class="option_foot" href="/">Sura Persona Natural</a></li>
+                                    <li class="menu-item"><a class="option_foot" href="/">Sura Persona Jurídica</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -259,10 +260,19 @@ require 'controllers/indexController.php';
         <section id="destacadas">
             <div class="container mt-3 ">
                 <div class="col-12 text-center">
-                    <h2>Últimas noticias</h2>
+                    <h2>Últimas Noticias</h2>
                 </div>
                 <div class="col-12 mt-4 d-flex justify-content-around">
                     <div class="row">
+                        <?php if (isset($noticias_array)) {
+                            modelo_ultima_noticia($noticias_array);
+                        } else {
+                            echo '<div class="col 12">
+                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                        </div>';
+                        }
+                        ?>
+                        <!--
                         <div class="col-lg-6 col-md-6 col-12 ">
                             <div class="card" style="width: 30rem;">
                                 <a href="">
@@ -306,6 +316,7 @@ require 'controllers/indexController.php';
                                 </div>
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -318,7 +329,7 @@ require 'controllers/indexController.php';
                 <img src="images/Logo.png" class="card-img-top" alt="...">
             </div>
             <div class=" container col-md-10">
-            <p class="mt-1"><?php echo $texto_quienes_somos ['quienes_somos']['parrafos'][0]?></p>
+                <p class="mt-1"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0] ?></p>
             </div>
             <div class="container col-md-2 cont_redes">
                 <ul class="footer_redes">
