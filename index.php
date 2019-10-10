@@ -243,10 +243,13 @@ require 'controllers/noticiasController.php';
                         <a href=" " target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO SURA.png" alt=""></a>
                     </div>
                     <div class="item" style="height: 180px;">
-                        <a href="" target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO EL LIBERTADOR.png" alt=""></a>
+                        <a href="" target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO BOLIVAR.png" alt=""></a>
                     </div>
-                    <div class="item" style="height: 150px;">
+                    <div class="item" style="height: 180px;">
                         <a href="" target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt=""></a>
+                    </div>
+                    <div class="item" style="height: 180px;">
+                        <a href="" target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO FIANZACREDITO.png" alt=""></a>
                     </div>
 
                 </div>
