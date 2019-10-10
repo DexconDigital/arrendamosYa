@@ -36,49 +36,13 @@
                         </div>
 
                         <div class="col-md-6">
-                            <h2 class="text-center"> Arrendamos Ya SAS</h2>
+                            <h2 class="text-center"><?php echo $texto_quienes_somos['quienes_somos_2']['titulo'] ?></h2>
                             <div class="banner_estadi">
                                 <section id="contador">
                                     <div class="text-center">
-                                        <div class="container  contenedor_banner">
-                                            <div class="row d-flex justify-content-between" style="padding: 24px;">
-                                                <div class="col-md-12 div_invisible invisible">
-                                                    <h2 id="counter-experence"></h2>
-                                                    <h4> <strong>5</strong> </h4>
-                                                    <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][0] ?></strong></h5>
-                                                </div>
-                                                <div class=" espacio_div col-xl-12 col-md-12 col-12 text-center mb-3">
-                                                    <div>
-                                                        <h2 id="counter-propertys"></h2>
-                                                        <h4> <strong></strong> </h4>
-                                                        <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][1] ?></strong></h5>
-                                                    </div>
-                                                </div>
-                                                <div class=" espacio_div col-xl-12  col-md-12 col-12 text-center mb-3">
-                                                    <div>
-
-                                                        <h2 id="counter-rent"></h2>
-                                                        <h4> <strong></strong> </h4>
-                                                        <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][2] ?></strong> </h5>
-                                                    </div>
-                                                </div>
-                                                <div class=" espacio_div col-xl-12  col-md-12 col-12 text-center mb-3">
-                                                    <div>
-
-                                                        <h2 id="counter-sale"></h2>
-                                                        <h2>0</h2>
-                                                        <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][3] ?></strong> </h5>
-                                                    </div>
-                                                </div>
-                                                <div class=" espacio_div col-xl-12  col-md-12 col-12 text-center mb-3">
-                                                    <div>
-
-                                                        <h2 id="counter-sale-rent"></h2>
-                                                        <h2>0</h2>
-                                                        <h5 class="color_result"><strong><?php echo $texto_contador_estadisticas['parrafos'][4] ?></strong></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="container mt-4">
+                                            <p><?php echo $texto_quienes_somos['quienes_somos_2']['parrafos'][0]  ?></p>
+                                            <p><?php echo $texto_quienes_somos['quienes_somos_2']['parrafos'][1]  ?></p>
                                         </div>
                                     </div>
                                 </section>
@@ -90,7 +54,77 @@
                 </div>
                 <div class="col-md-12">
                     <p class=""><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0] ?></p>
-                      <p><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1] ?> <?php echo $texto_quienes_somos['quienes_somos']['parrafos'][2] ?><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][3] ?><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][4] ?></p>
+                    <p><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1] ?> <?php echo $texto_quienes_somos['quienes_somos']['parrafos'][2] ?><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][3] ?><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][4] ?></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="col-md-12">
+                <h2 class="text-center mb-4"> <strong><?php echo $texto_quienes_somos['mision']['titulo'] ?></strong></h2>
+                <div class="banner_estadi">
+                    <section id="contador">
+                        <div class="text-center">
+                            <div class="container mt-4">
+                                <p><?php echo $texto_quienes_somos['mision'][0] ?></p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="col-md-12">
+                <h2 class="text-center mb-4"> <strong><?php echo $texto_quienes_somos['vision']['titulo'] ?></strong></h2>
+                <div class="banner_estadi">
+                    <section id="contador">
+                        <div class="text-center">
+                            <div class="container mt-4">
+                                <p><?php echo $texto_quienes_somos['mision'][0] ?></p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="col-md-12">
+                <h2 class="text-center mb-4"> <strong><?php echo $texto_quienes_somos['objetivos']['titulo'] ?></strong></h2>
+                <div class="banner_estadi">
+                    <section id="contador">
+                        <div class="text-center">
+                            <div class="container mt-4">
+                                <p><?php echo $texto_quienes_somos['objetivos'][0] ?></p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="col-md-12">
+                <h2 class="text-center mb-4"> <strong><?php echo $texto_quienes_somos['valores']['titulo'] ?></strong></h2>
+                <div class="banner_estadi">
+                    <section id="contador">
+                        <div class="">
+                            <div class="container mt-4">
+                                <ul>
+                                    <li><?php echo $texto_quienes_somos['valores'][0] ?></li>
+                                    <li><?php echo $texto_quienes_somos['valores'][1] ?></li>
+                                    <li><?php echo $texto_quienes_somos['valores'][2] ?></li>
+                                    <li><?php echo $texto_quienes_somos['valores'][3] ?></li>
+                                    <li><?php echo $texto_quienes_somos['valores'][4] ?></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+
                 </div>
             </div>
         </section>
@@ -105,7 +139,7 @@
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
                             <div class="col-xl-10 col-md-3 col-4 text-center ">
-                                <i class="fas fa-tags"></i>
+                                <i class="fas fa-sign"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['arrendamientos']['titulo'] ?></strong></h4>
@@ -122,7 +156,7 @@
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
                             <div class="col-xl-12 col-md-3 col-4 text-center">
-                                <i class="fas fa-sign"></i>
+                                <i class="fas fa-tags"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['ventas']['titulo'] ?></strong></h4>

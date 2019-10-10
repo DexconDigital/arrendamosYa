@@ -40,9 +40,11 @@
                             WhatsApp o visitarnos de <?php echo $datos_contacto ['horario']['horario'] ?>.</p>
                         <ul id="info_list">
                             <li><i class="fas fa-map-marker-alt m-2 color_ubi"></i> <strong><?php echo $datos_contacto['direccion']['direccion'] ?></strong></li>
+                            <li><a href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2  color_wapp "></i> <strong><?php echo $datos_contacto['correo']['correo'] ?></strong></a></li>
                             <li><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?>"><i class="fas fa-phone m-2 color_tel "></i> <strong><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></strong></a> </li>
                             <li><a href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt m-2 color_cel "></i> <strong><?php echo $datos_contacto['celular']['imprimir'] ?></strong></a></li>
                             <li><a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2  color_wapp "></i> <strong><?php echo $datos_contacto['whatsapp']['imprimir'] ?></strong></a></li>
+                            
                         </ul>
                         <ul class="row redes">
                             <li> <a href="<?php echo $redes_sociales['facebook']['link'] ?>" target="_blank"><i class="fab fa-facebook-f mr-2 color_face "></i></a></li>
