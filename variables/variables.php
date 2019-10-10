@@ -144,19 +144,19 @@ $texto_quienes_somos = [
 			0 => "Somos una empresa del sector inmobiliario, que presta servicios de Arrendamientos, Ventas, Hipotecas, Avalúos y Asesorías Jurídicas en temas relacionados con la actividad inmobiliaria. Contamos con un Equipo Humano de excelentes calidades y riqueza moral y nuestro lema es servir con calidad.",
 			1 => "Nuestra sede principal se encuentra en el Sector Exclusivo de la Alpujarra y tenemos presencia en los 10 Municipios del Área Metropolitana.",
 		],
-	];
+	],
 	"mision" => [
 		"titulo" => "Misión",
 		0 => "ARRENDAMOS YA es una empresa del sector inmobiliario que nació para ofrecer a nuestros clientes la confianza, seguridad y tranquilidad de Administrar, Arrendar o Vender propiedades a su entera satisfacción, con procesos modernos y seguros y personal altamente calificado.",
-	];
+	],
 	"vision" => [
 		"titulo" => "Visión",
 		0 => "ARRENDAMOS YA, para el año 2.030 seremos una empresa líder y competitiva en la prestación del servicio y mercado inmobiliario del área metropolitana, con procesos certificados en Calidad que beneficien a propietarios, arrendatarios y compradores.",
-	];
+	],
 	"objetivos" => [
 		"titulo" => "Objetivos de Calidad",
 		0 => "ARRENDAMOS YA, se propone a corto plazo ofrecer el mejor servicio del mercado y a largo plazo ser una de las empresas mejor posicionadas en el sector inmobiliario.",
-	];
+	],
 	"valores" => [
 		"titulo" => "Valores",
 		0 => "Para ARRENDAMOS YA, el Cliente es nuestra razón de ser.",
@@ -164,7 +164,7 @@ $texto_quienes_somos = [
 		2 => "Las calidades, cualidades e idoneidad de todo el personal están dispuestos a la satisfacción del cliente.",
 		3 => "Estamos siempre atentos a escuchar las necesidades y recomendaciones del cliente que nos retroalimentan y permiten mejorar.",
 		4 => "Siempre habrá alguien que lo escuche y acompañe hasta solucionar sus necesidades e inquietudes.",
-	];
+	],
 ];
 
 //textos y banner contador de estadisticas seccion home
