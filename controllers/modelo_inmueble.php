@@ -187,7 +187,7 @@ function modelo_inmueble_similares($r)
                                                             <div class="property-image">
                                                                 <img class="imagen_destacadas" alt="" src="' . $imagen . '"></div>
                                                             <div class="overlay">
-
+ 
                                                             </div>
                                                         </a>
                                                     </div>

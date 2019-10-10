@@ -174,7 +174,7 @@
                         <div class="col-xl-3 col-md-2 col-2">
 
                         </div>
-                        <div class="col-xl-9 col-md-10 col-10 cont_impoteca">
+                        <div class="col-xl-9 col-md-10 col-10 cont_hipoteca">
                             <div class="col-xl-12 col-md-3 col-4 text-center">
                                 <i class="fas fa-hand-holding-usd"></i>
                             </div>

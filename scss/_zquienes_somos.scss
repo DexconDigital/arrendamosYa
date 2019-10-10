@@ -26,14 +26,15 @@
         }
     }
 }
-.cont_impoteca{
+.cont_hipoteca{
     @include media-breakpoint-up(md){
     position: absolute;
     margin-top: -66%;
     margin-left: 13%;
     }
     @include media-breakpoint-up(lg){
-        margin-top: 0%;
+    margin-top: 0%;
+    margin-left: 88px;
         
     }
 }

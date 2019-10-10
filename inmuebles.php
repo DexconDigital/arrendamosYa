@@ -35,7 +35,7 @@ require 'controllers/inmueblesController.php';
         <div class="container">
             <div class="row">
 
-                <div class="col-md-3 border  fonto_buscador">
+                <div class=" col-lg-3 col-md-4 border  fonto_buscador">
                     <div class="col-lg-12 col-md-12 col-12 form-group pr-md-0 mt-3 margen_botones">
                         <input type="text" class="form-control " id="codigo_buscar" placeholder="Código">
                     </div>
@@ -94,7 +94,7 @@ require 'controllers/inmueblesController.php';
 
                 </div>
 
-                <div class="col-md-9  cont_ficha">
+                <div class="col-lg-9 col-md-8  cont_ficha">
 
                     <!-- //listar Inmuebles -->
                     <?php

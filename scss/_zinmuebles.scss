@@ -20,6 +20,19 @@
     border-color: $color_azul_oscuro;
     padding-top: 0%;
     margin-top: 14%;
+    @include media-breakpoint-up(md){
+    color: #fff;
+    background-color: #0b5998;
+    border-color: #0b5998;
+    padding-top: 0%;
+    margin-top: -51%;
+    }
+    @include media-breakpoint-up(lg){
+        background-color: #0b5998;
+        border-color: #0b5998;
+        padding-top: 0%;
+        margin-top: 2%; 
+    }
     }
     
     .fonto_buscador{
@@ -34,14 +47,26 @@
     
      
     img{
-    object-fit: cover;
-    width: 104%;
-    height: 100%;
+     object-fit: contain;
+     width: 104%;
+     height: 100%;
+     padding-left: 20px;
+     padding-right: 20px;
+     margin-top: 14px;
     @include media-breakpoint-up(md) {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 63%;
     position: absolute;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    }
+    @include media-breakpoint-up(lg){
+        object-fit: cover;
+        width: 100%;
+        height:100%;
+        position: absolute; 
     }
     }
     .contenedor_ficha{
@@ -61,6 +86,11 @@
     }
     .espacio_ficha{
         padding: 8px 25px;
+        margin-top: 14px;
+        @include media-breakpoint-up(md){
+            margin-top:0px;
+        }
+       
     }
     .elemneto{
     display: flex;
@@ -94,7 +124,17 @@
     .info_inmueble{
         display: flex;
         list-style: none;
-        margin-left: 10%;
+        margin-left: 2%;
+        @include media-breakpoint-up(md){
+        display: flex;
+        list-style: none;
+       margin-left: -157%;
+        }
+        @include media-breakpoint-up(lg){
+            display: flex;
+            list-style: none;
+            margin-left: 10%;  
+        }
         
         li{
        margin-right: 0.5em;

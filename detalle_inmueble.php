@@ -251,7 +251,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                     <div>
                                         <h5 class="titulo_similares" class="mb-0"><strong>Inmuebles similares</strong></h5>
                                     </div>
-                                    <div class="row justify-content-center">
+                                    <div class="row justify-content-center separador_siminlares">
                                         <div class="col-12">
 
                                             <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
@@ -286,7 +286,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                 <?php
                                 if (count($r['caracteristicasInternas']) > 0) {
                                     echo
-                                        '<div class="col-md-6" style="margin-bottom: 12px;">
+                                        '<div class="col-lg-6 col-md-6" style="margin-bottom: 12px;">
                                     <h4 class="Lineas_separadora"><strong>Características Internas</strong></h4>
                                         <ul>';
                                     for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
@@ -301,7 +301,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                 <?php
                                 if (count($r['caracteristicasExternas']) > 0) {
                                     echo
-                                        '<div class="col-md-6 row cont_externas">
+                                        '<div class="col-lg-6 col-md-6 row cont_externas">
                                     <h4 class="Lineas_separadora"><strong>Características Externas</strong></h4>
                                         <ul>';
                                     for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {

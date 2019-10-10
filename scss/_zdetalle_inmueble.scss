@@ -86,6 +86,11 @@
                     list-style: none;
                     margin-left: 0%;
                     padding: 41px;
+                    @include media-breakpoint-up(md){
+                        display: flex;
+                        list-style: none;
+                        
+                    }
                     
                     li{
                    margin-right: 0.5em;
@@ -199,10 +204,12 @@
   .cont_externas{
     margin-bottom: 12px;
     position: absolute;
-    margin-top: 59%;
-    padding: 4%;
+    margin-top: 46%;
+    padding: 7%;
   }
- 
+ .separador_siminlares{
+    margin-top: 21px;
+ }
 
 
 

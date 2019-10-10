@@ -102,16 +102,16 @@ require 'controllers/noticiasController.php';
                         <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0">
                             <input type="text" class="form-control " id="garajes_buscar" placeholder=" Garajes">
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 form-group pr-md-0">
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0">
                             <input type="text" class="form-control " id="area_minima_buscar" placeholder=" Área Mínima">
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 form-group pr-md-0">
+                        <div class="col-lg-3 col-md-3 col-12 form-group pr-md-0">
                             <input type="text" class="form-control " id="area_maxima_buscar" placeholder=" Área Máxima">
                         </div>
-                        <div class="col-lg-3  col-md-6 form-group pr-md-0">
+                        <div class="col-lg-3  col-md-3 form-group pr-md-0">
                             <input type="text" id='precio_minimo_buscar' class="form-control  select_color" placeholder="Precio Mínimo">
                         </div>
-                        <div class="col-lg-3  col-md-6 form-group pr-md-0">
+                        <div class="col-lg-3  col-md-3 form-group pr-md-0">
                             <input type="text" id='precio_maximo_buscar' class="form-control  select_color" placeholder="Precio Máximo">
                         </div>
                         <div class="col-lg-3 col-md-6 col-12 form-group pr-md-0">

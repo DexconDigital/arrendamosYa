@@ -7892,7 +7892,13 @@ p, a {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  position: absolute; }
+  margin-bottom: 19px; }
+  @media (min-width: 768px) {
+    #aseguradoras img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute; } }
 #aseguradoras .menu-item {
   font-size: 0.9rem;
   border-bottom: 1px solid #826a6173;
@@ -8017,6 +8023,9 @@ p, a {
 @media (min-width: 768px) {
   #conte_posiciion {
     position: absolute; } }
+@media (min-width: 992px) {
+  #conte_posiciion {
+    position: static; } }
 
 #buscador {
   position: relative;
@@ -8050,13 +8059,14 @@ p, a {
       margin-top: 0%; } }
 
 @media (min-width: 768px) {
-  .cont_impoteca {
+  .cont_hipoteca {
     position: absolute;
     margin-top: -66%;
     margin-left: 13%; } }
 @media (min-width: 992px) {
-  .cont_impoteca {
-    margin-top: 0%; } }
+  .cont_hipoteca {
+    margin-top: 0%;
+    margin-left: 88px; } }
 
 @media (min-width: 768px) {
   .cont_juridica {
@@ -8102,6 +8112,19 @@ p, a {
     border-color: #0b5998;
     padding-top: 0%;
     margin-top: 14%; }
+    @media (min-width: 768px) {
+      #cont_inmuebles .btn {
+        color: #fff;
+        background-color: #0b5998;
+        border-color: #0b5998;
+        padding-top: 0%;
+        margin-top: -51%; } }
+    @media (min-width: 992px) {
+      #cont_inmuebles .btn {
+        background-color: #0b5998;
+        border-color: #0b5998;
+        padding-top: 0%;
+        margin-top: 2%; } }
   #cont_inmuebles .fonto_buscador {
     background-color: #EBEDEF; }
   #cont_inmuebles .cont_ficha {
@@ -8110,10 +8133,22 @@ p, a {
       #cont_inmuebles .cont_ficha {
         padding-left: 3%; } }
   #cont_inmuebles img {
-    object-fit: cover;
+    object-fit: contain;
     width: 104%;
-    height: 100%; }
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 14px; }
     @media (min-width: 768px) {
+      #cont_inmuebles img {
+        object-fit: cover;
+        width: 100%;
+        height: 63%;
+        position: absolute;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px; } }
+    @media (min-width: 992px) {
       #cont_inmuebles img {
         object-fit: cover;
         width: 100%;
@@ -8129,7 +8164,11 @@ p, a {
   #cont_inmuebles .cont_ficha {
     width: 104%; }
   #cont_inmuebles .espacio_ficha {
-    padding: 8px 25px; }
+    padding: 8px 25px;
+    margin-top: 14px; }
+    @media (min-width: 768px) {
+      #cont_inmuebles .espacio_ficha {
+        margin-top: 0px; } }
   #cont_inmuebles .elemneto {
     display: flex;
     justify-content: space-between;
@@ -8157,7 +8196,17 @@ p, a {
   #cont_inmuebles .info_inmueble {
     display: flex;
     list-style: none;
-    margin-left: 10%; }
+    margin-left: 2%; }
+    @media (min-width: 768px) {
+      #cont_inmuebles .info_inmueble {
+        display: flex;
+        list-style: none;
+        margin-left: -157%; } }
+    @media (min-width: 992px) {
+      #cont_inmuebles .info_inmueble {
+        display: flex;
+        list-style: none;
+        margin-left: 10%; } }
     #cont_inmuebles .info_inmueble li {
       margin-right: 0.5em; }
 
@@ -8304,6 +8353,10 @@ p, a {
           list-style: none;
           margin-left: 0%;
           padding: 41px; }
+          @media (min-width: 768px) {
+            #inf_detalle .conteedor_general .cont_list .con_detalle_inform .info_inmueble {
+              display: flex;
+              list-style: none; } }
           #inf_detalle .conteedor_general .cont_list .con_detalle_inform .info_inmueble li {
             margin-right: 0.5em; }
       #inf_detalle .conteedor_general .cont_list .cont_precio {
@@ -8392,7 +8445,10 @@ p, a {
 .cont_externas {
   margin-bottom: 12px;
   position: absolute;
-  margin-top: 59%;
-  padding: 4%; }
+  margin-top: 46%;
+  padding: 7%; }
+
+.separador_siminlares {
+  margin-top: 21px; }
 
 /*# sourceMappingURL=style.css.map */
