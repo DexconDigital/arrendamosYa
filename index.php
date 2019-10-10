@@ -124,7 +124,7 @@ require 'controllers/noticiasController.php';
                         </div>
                         <div class="col-lg-3 col-md-4 col-12 form-group pr-md-0">
 
-                        </div> 
+                        </div>
 
                     </div>
                 </div>
@@ -213,10 +213,12 @@ require 'controllers/noticiasController.php';
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 text-center">
                             <h2> Formularios Aseguradoras</h2>
-                            <div class="col-12 mt-3">
+                            <div class="col-12 mt-1">
                                 <ul class="menu">
-                                    <li class="menu-item"><a class="option_foot" href="/">Libertador Persona Jurídica</a></li>
-                                    <li class="menu-item"><a class="option_foot" href="/">Libertador Persona Natural</a></li>
+                                    <li class="menu-item"><a class="option_foot" href="/">FianzaCrédio Persona Jurídica</a></li>
+                                    <li class="menu-item"><a class="option_foot" href="/">FianzaCrédio Persona Natural</a></li>
+                                    <li class="menu-item"><a class="option_foot" href="/">Seguros Bolivar Persona Jurídica</a></li>
+                                    <li class="menu-item"><a class="option_foot" href="/">Seguros Bolivar Persona Natural</a></li>
                                     <li class="menu-item"><a class="option_foot" href="/">Sura Persona Natural</a></li>
                                     <li class="menu-item"><a class="option_foot" href="/">Sura Persona Jurídica</a></li>
                                 </ul>
@@ -246,10 +248,10 @@ require 'controllers/noticiasController.php';
                         <a href="" target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO BOLIVAR.png" alt=""></a>
                     </div>
                     <div class="item" style="height: 180px;">
-                        <a href="" target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt=""></a>
+                        <a href="" target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO FIANZACREDITO.png" alt=""></a>
                     </div>
                     <div class="item" style="height: 180px;">
-                        <a href="" target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO FIANZACREDITO.png" alt=""></a>
+                        <a href="" target="_blank"><img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt=""></a>
                     </div>
 
                 </div>
