@@ -8027,6 +8027,27 @@ p, a {
   #conte_posiciion {
     position: static; } }
 
+#mision_vision_obj img {
+  object-fit: contain;
+  width: 70%;
+  height: 100%;
+  margin-left: 18%; }
+#mision_vision_obj .texto {
+  text-align: justify; }
+#mision_vision_obj .margen_text {
+  margin-top: 5%; }
+#mision_vision_obj .margen_text_obj {
+  margin-top: 11%; }
+#mision_vision_obj ul {
+  text-align: justify; }
+#mision_vision_obj .img_valores {
+  object-fit: contain;
+  width: 80%;
+  height: 100%;
+  margin-left: 13%; }
+#mision_vision_obj .cont_valores {
+  margin-top: 6%; }
+
 #buscador {
   position: relative;
   background-color: #6c757d; }
@@ -8092,6 +8113,9 @@ p, a {
 .div_invisible {
   visibility: hidden !important;
   position: absolute; }
+
+.margen_top {
+  margin-top: 5%; }
 
 #cont_inmuebles {
   margin-top: 32%; }

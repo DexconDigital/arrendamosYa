@@ -315,6 +315,35 @@ body {
     position: static;
   }
 } 
+#mision_vision_obj{
+  img{
+    object-fit: contain;
+    width: 70%;
+    height: 100%;
+    margin-left: 18%;
+  }
+  .texto{
+      text-align: justify;
+  }
+  .margen_text{
+    margin-top: 5%;
+  }
+  .margen_text_obj{
+    margin-top: 11%;
+  }
+  ul{
+    text-align: justify;
+  }
+  .img_valores{
+    object-fit: contain;
+    width: 80%;
+    height: 100%;
+    margin-left: 13%;
+  }
+  .cont_valores{
+    margin-top: 6%;
+  }
+}
 
    
 
