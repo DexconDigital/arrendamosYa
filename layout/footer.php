@@ -78,7 +78,7 @@
                                     <div class="form-check custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="ejemplo">
                                         <input type="checkbox" class="form-check-input" id="ejemplo" requiered="">
-                                        <label class="custom-control-label" for="ejemplo">Acepto <a class="politicas_contac" href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf"  class="a-terminos" target="blank">la política y tratamiento de datos.</a></label>
+                                       <label class="custom-control-label" for="ejemplo">Confimo que he leído, entendido y acepto la<a class="color_poltica" href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf" download="Politica de tratamiento de infromación.pdf"> <strong>política de tratamiento de datos personales.</strong></a></label>
                                     </div>
                                 </div>
                                 <div class="form-group col-12">
