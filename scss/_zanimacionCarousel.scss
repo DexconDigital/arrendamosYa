@@ -2,7 +2,7 @@
     .carousel-item{
         animation-name: zoom;
         animation-iteration-count: infinite;
-        animation-duration: 5s;
+        animation-duration: 6s;
         animation-timing-function: ease-in;
         }
         .overlay{
@@ -20,7 +20,7 @@
         
     }
     100%{
-        transform: scale(1.2);
+        transform: scale(1.3);
         
     }
 }
