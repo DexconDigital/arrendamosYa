@@ -22,7 +22,9 @@ $(document).ready(function() {
 $('#aliados_slide').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    nav:false,
+    pagination:false,
+    autoplay: 1000,
     responsive:{
         0:{
             items:1
@@ -37,3 +39,5 @@ $('#aliados_slide').owlCarousel({
 });
 
 });
+
+

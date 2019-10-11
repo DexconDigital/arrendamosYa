@@ -24,7 +24,7 @@ require 'controllers/noticiasController.php'; ?>
     </section>
 
     <!-- **************************Contenido ********************************** -->
-    <div class="container-fluid body cont_blog">    
+    <div class="container-fluid body cont_blog  wow fadeInDownBig" data-wow-duration="2s">    
 
         <section id="cont_blog">
             <div class="container">

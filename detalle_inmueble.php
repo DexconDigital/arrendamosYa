@@ -58,7 +58,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
 
 
     <!-- **************************Contenido ********************************** -->
-    <div class="container-fluid body cont_blog">
+    <div class="  wow bounceInLeft" data-wow-duration="2s">
         <section id="inf_detalle">
             <div class="container">
                 <div class="col-md-12">

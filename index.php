@@ -45,6 +45,7 @@ require 'controllers/noticiasController.php';
                         <img src="images/slide_3.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <div class="overlay"></div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -133,7 +134,7 @@ require 'controllers/noticiasController.php';
 
         </section>
 
-        <section id="destacadas">
+        <section id="destacadas" class="wow  bounceInUp" data-wow-duration="2s">
             <div class="container mt-3 ">
                 <div class="col-12 text-center">
                     <h2>Propiedades Destacadas</h2>
@@ -204,7 +205,7 @@ require 'controllers/noticiasController.php';
 
         </section>
 
-        <section id="aseguradoras">
+        <section id="aseguradoras" class=" wow fadeInLeftBig" data-wow-duration="2s">
             <div class="container mt-3">
                 <div class="col-12">
                     <div class="row">
@@ -262,7 +263,7 @@ require 'controllers/noticiasController.php';
 
         </section>
 
-        <section id="destacadas">
+        <section id="destacadas" class="wow fadeInUp" data-wow-duration="2s">
             <div class="container mt-3 ">
                 <div class="col-12 text-center">
                     <h2>Últimas Noticias</h2>
@@ -329,7 +330,7 @@ require 'controllers/noticiasController.php';
 
         <hr style=" width:100%">
 
-        <section id="inmobiliaria_historia">
+        <section id="inmobiliaria_historia" class="wow lightSpeedIn" data-wow-duration="2s" >
             <div class="container col-md-2 mb-3 cont_img">
                 <img src="images/Logo.png" class="card-img-top" alt="...">
             </div>

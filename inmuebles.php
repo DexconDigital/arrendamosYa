@@ -28,7 +28,7 @@ require 'controllers/inmueblesController.php';
 
 
     <!-- **************************Contenido ********************************** -->
-    <section id="cont_inmuebles">
+    <section id="cont_inmuebles" class=" wow bounceInLeft" data-wow-duration="2s">
         <div class="col-md-12 text-center mb-4">
             <h2><strong>Nuestra Oferta de Inmuebles</strong></h2>
         </div>

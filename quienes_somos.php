@@ -25,7 +25,7 @@
     <!-- **************************Contenido ********************************** -->
     <div class="container-fluid body cont_blog">
 
-        <section id="imagen_cont">
+        <section id="imagen_cont" class="wow bounce" data-wow-duration="2s">
             <div class="container">
                 <div class="col-md-12">
                     <div class="row">
@@ -58,10 +58,8 @@
                 </div>
             </div>
         </section>
-        <section>
-
-        </section>
-        <section id="mision_vision_obj" class="mt-4">
+        
+        <section id="mision_vision_obj" class="mt-4 wow bounceIn" data-wow-duration="2s">
             <div class="container">
 
                 <div class="col-lg-12 col-md-4 mb-4">
@@ -143,29 +141,13 @@
             </div>
         </section>
 
-        <section>
-            <div class="col-md-12">
-                
-                <div class="banner_estadi">
-                    <section id="contador">
-                        <div class="">
-                            <div class="container mt-4">
-                                
-                            </div>
-                        </div>
-                    </section>
 
-
-                </div>
-            </div>
-        </section>
-
-        <section id="servicios" class="mt-5">
+        <section id="servicios" class="mt-5  wow rubberBand" data-wow-duration="2s">
             <h2 class="text-center mb-4"> <strong>Nuestros Servicios</strong></h2>
             <div class="container" style="margin-bottom: 33px;">
                 <div class="d-flex justify-content-between col-md-12 row ">
                     <!--Cuadro arriendos -->
-                    <div class="col-lg-4 col-md-6 col-12 row ">
+                    <div class="col-lg-4 col-md-6 col-12 row">
                         <div class="col-xl-3 col-md-2 col-2">
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
@@ -283,10 +265,11 @@
     <!-- *******************Scripts********************* -->
     <?php include 'layout/archivosfooter.php' ?>
     <?php include 'layout/footer.php' ?>
-    <!--  contador -->
+    <!--  contador 
 
     <script src="js/counter-propertys.js"></script>
     <script src="js/countUp.min.js"></script>
+    -->
 </body>
 
 </html>

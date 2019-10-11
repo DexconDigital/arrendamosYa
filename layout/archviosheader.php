@@ -3,5 +3,6 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
 
 <title><?php echo $page;?> | Arrendamos Ya</title>

@@ -25,13 +25,13 @@
     <!-- **************************Contenido ********************************** -->
     <div class="container-fluid body cont_blog">
 
-        <section id="mapa_inmo">
+        <section id="mapa_inmo" class="wow fadeInLeftBig" data-wow-duration="2s">
             <div class="col-md-12 p-0">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1639265584754!2d-75.57708248555109!3d6.242115228102993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429acbacdd897%3A0x33f5ef6caf25c98e!2sTORRE%20NUEVO%20CENTRO%20LA%20ALPUJARRA!5e0!3m2!1ses-419!2sco!4v1570022524187!5m2!1ses-419!2sco" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </section>
 
-        <section id="info_inmo"> 
+        <section id="info_inmo" class="wow fadeInRightBig" data-wow-duration="2s"> 
             <div class="container ">
                 <div class="row col-md-12">
                     <div class="col-md-6">
