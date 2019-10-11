@@ -134,7 +134,7 @@ require 'controllers/noticiasController.php';
 
         </section>
 
-        <section id="destacadas" class="wow  bounceInUp" data-wow-duration="2s">
+        <section id="destacadas" class="wow  bounceInRight" data-wow-duration="2s">
             <div class="container mt-3 ">
                 <div class="col-12 text-center">
                     <h2>Propiedades Destacadas</h2>
@@ -330,7 +330,7 @@ require 'controllers/noticiasController.php';
 
         <hr style=" width:100%">
 
-        <section id="inmobiliaria_historia" class="wow lightSpeedIn" data-wow-duration="2s" >
+        <section id="inmobiliaria_historia" class="wow bounce" data-wow-duration="2s" >
             <div class="container col-md-2 mb-3 cont_img">
                 <img src="images/Logo.png" class="card-img-top" alt="...">
             </div>
