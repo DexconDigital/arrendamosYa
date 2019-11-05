@@ -25,7 +25,8 @@ require 'controllers/detalleInmuebleController.php'; ?>
         <?php include 'layout/menu.php' ?>
     </section>
 
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+    <!--link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>-->
+    <link rel="stylesheet" href="css/swiper.min.css" class="rel">
     <?php  include 'layout/archviosheader.php'; ?>
     <link rel="stylesheet" href="mapas/leaflet.css" crossorigin="" />
     <meta property="og:type" content="website" />
