@@ -143,8 +143,10 @@ require 'controllers/detalleInmuebleController.php'; ?>
                 <div class="swiper-container main-slider loading">
                     <div class="swiper-wrapper">
                         <?php
+                        
                         if (isset($r['fotos'])) {
-                            for ($i = 0; $i < count($r['fotos']); $i++) {
+                            
+                                for ($i = 0; $i < count($r['fotos']); $i++) {
                                 echo ' <div class="swiper-slide">
                                         <figure class="slide-bgimg" style="background-image:url(' . $r['fotos'][$i]['foto'] . ')">
                                           <img src="' . $r['fotos'][$i]['foto'] . '" class="entity-img" />
@@ -185,7 +187,8 @@ require 'controllers/detalleInmuebleController.php'; ?>
                     <div class="swiper-wrapper" role="navigation">
                         <?php
                         if (isset($r['fotos'])) {
-                            for ($i = 0; $i < count($r['fotos']); $i++) {
+                            
+                            for ($i = 1; $i < count($r['fotos']); $i++) {
                                 echo ' <div class="swiper-slide">
                                         <figure class="slide-bgimg" style="background-image:url(' . $r['fotos'][$i]['foto'] . ')">
                                           <img src="' . $r['fotos'][$i]['foto'] . '" class="entity-img" />
@@ -224,7 +227,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
             <div class="container ">
                 <div class="col-md-12">
                     <div class="row">
-                        <div id="conte_posiciion" class="col-lg-4 col-md-4">
+                        <div id="conte_posiciion" class="col-lg-4 col-md-6">
                             <div class="text-center">
                                 <div>
                                     <h5 class="titulo_asesor" class="mb-0"> <strong>Contacto con el asesor</strong></h5>
@@ -266,7 +269,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                         <div class="col-lg-8 col-md-12 cont_caract">
                             <div class="row">
                                 <!-- descripcion -->
-                                <div class="col-md-6" style="margin-bottom: 12px;">
+                                <div class="col-md-6 cont_caracter">
                                     <h4 class="Lineas_separadora"><strong>Características</strong></h4>
                                     <ul class="pl-4">
                                         <li>Código: <?php echo $co; ?></li>
@@ -286,9 +289,9 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                 <?php
                                 if (count($r['caracteristicasInternas']) > 0) {
                                     echo
-                                        '<div class="col-lg-6 col-md-6" style="margin-bottom: 12px;">
+                                        '<div class="col-lg-6 col-md-6 cont_internas" style="margin-bottom: 12px;">
                                     <h4 class="Lineas_separadora"><strong>Características Internas</strong></h4>
-                                        <ul>';
+                                        <ul class="margin_internas">';
                                     for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
                                         $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
                                         echo '<li>' . $caracteristicas . '</li>';
@@ -303,7 +306,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                     echo
                                         '<div class="col-lg-6 col-md-6 row cont_externas">
                                     <h4 class="Lineas_separadora"><strong>Características Externas</strong></h4>
-                                        <ul>';
+                                        <ul class="margin_internas">';
                                     for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
                                         $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
                                         echo '<li>' . $caracteristicas . '</li>';
@@ -316,7 +319,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                 <?php
                                 if (count($r['caracteristicasAlrededores']) > 0) {
                                     echo
-                                        '<div class="col-md-6" style="margin-bottom: 12px;">
+                                        '<div class="col-md-6 container_alrededor" style="margin-bottom: 12px;">
                                     <h4 class="Lineas_separadora"><strong>Características de los alrededores</strong></h4>
                                         <ul>';
                                     for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
@@ -344,7 +347,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                 ';
                                     } ?>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 cont_mapa">
                                     <h4 class="Lineas_separadora"><strong>Mapa</strong></h4>
                                     <div class="card mapa_tamaño">
                                         <div class="">

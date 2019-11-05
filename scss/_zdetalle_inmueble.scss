@@ -1,11 +1,25 @@
 #inf_detalle{
-    margin-top: 7%;
-
+    margin-top: 38%;
+    @include media-breakpoint-up(md){
+    margin-top: 14%;
+    }
+    @include media-breakpoint-up(lg){
+        margin-top: 7%;
+        }
     .compartir{
     position: absolute;
     margin-left: 54%;
-    margin-top: 2%;
+    margin-top: 46%;
+    @include media-breakpoint-up(md){
+        margin-left: 79%;
+        margin-top: 12%;
     }
+    @include media-breakpoint-up(lg){
+        margin-left: 53%;
+       margin-top: 4%;
+    }
+    } 
+    
 
     .conteedor_general{
         display: flex;
@@ -21,6 +35,10 @@
                 margin-right: 0px;
                 padding-right: 0px;
                 list-style: none;
+                position: absolute;
+                @include media-breakpoint-up(md){
+                     position: initial;
+                    }
 
                 .cont_titulo::after{
                     position: absolute;
@@ -73,6 +91,18 @@
             .con_detalle_inform {
                 margin-right: 0px;
                 list-style: none;
+                position: absolute;
+                margin-top: 26%;
+                margin-left: 2%;
+                @include media-breakpoint-up(md){
+                    margin-top: 82px;
+                    margin-left: -5%;
+                   }
+                   @include media-breakpoint-up(lg){
+                    margin-top: -6px;
+                    margin-left: 25%;
+                   }
+
 
                 .lista_style{
                     margin-bottom: 0;
@@ -85,10 +115,11 @@
                     display: flex;
                     list-style: none;
                     margin-left: 0%;
-                    padding: 41px;
+                    
                     @include media-breakpoint-up(md){
                         display: flex;
                         list-style: none;
+                        padding: 41px;
                         
                     }
                     
@@ -102,7 +133,18 @@
                 padding-right: 0;
                 margin-right: 0;
                 list-style: none;
-                margin-top: -22px;
+                position: absolute;
+                margin-top: 19%;
+                @include media-breakpoint-up(md){
+                    margin-top: 14%;
+                   left: 41%
+                    
+                }
+                @include media-breakpoint-up(lg){
+                    margin-top: 1%;
+                    left: 54%
+                    
+                }
 
 
                 .precio_style{
@@ -121,8 +163,20 @@
             padding: 0;
             list-style-type: none;
             list-style: none;
-            margin-top: 0%;
+            margin-top: 44%;
             margin-right: 2%;
+            position: absolute;
+            @include media-breakpoint-up(md){
+                left: 49%;
+                margin-top: 2%;
+                
+            }
+            @include media-breakpoint-up(lg){
+                left: 77%;
+                margin-top: 2%;
+                
+            }
+
 
             .tamaño_redes{
                 margin-right: 38px;
@@ -174,6 +228,14 @@
 }
 .cont_caract{
     margin-top: 2%;
+    margin-bottom: 12px;
+    @include media-breakpoint-up(md){
+        margin-left: 0%;
+        margin-bottom: 0px;
+        
+        
+    }
+
 }
 .property{
     margin-bottom: 10px;
@@ -200,17 +262,85 @@
     text-align: left;
     padding: 0%;
 }
+.cont_mapa{
+    margin-top: 21%;
+    @include media-breakpoint-up(md){
+        margin-top: -2%;
+        
+        
+    }
+    @include media-breakpoint-up(lg){
+        margin-top: 0%;
+        
+        
+    }
+}
+.margin_internas{
+    margin-left: 7%;
+}
 
   .cont_externas{
     margin-bottom: 12px;
-    position: absolute;
-    margin-top: 46%;
+    margin-top: -5%;
     padding: 7%;
+    @include media-breakpoint-up(md){
+        margin-top: -7%;
+        left: 51%;
+    }
+    @include media-breakpoint-up(lg){
+        margin-top: -37%;
+        left: -2%;
+    }
   }
  .separador_siminlares{
     margin-top: 21px;
  }
-
+ #carousel_slider{
+     .container{
+        margin-top: 51%;
+        @include media-breakpoint-up(md){
+            margin-top: 8%;
+            
+        }
+        @include media-breakpoint-up(lg){
+            margin-top: 3%; 
+            
+        }
+     }
+ }
+ .cont_caracter{
+    @include media-breakpoint-up(md){
+        
+        margin-left: 51%;
+        margin-top: 2%;
+    }
+    @include media-breakpoint-up(lg){
+        position: initial;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+ }
+ .cont_internas{
+    @include media-breakpoint-up(md){
+        margin-left: 51%;
+    }
+    @include media-breakpoint-up(lg){
+    position: inherit;
+    margin-left: 0px;
+    margin-left: 0%;
+    }
+ }
+ .container_alrededor{
+    margin-left: 7%;
+    @include media-breakpoint-up(md){
+        margin-top: -1%;
+        margin-left: 54%
+    }
+    @include media-breakpoint-up(lg){
+        margin-left:51%;
+        margin-top: -24%;
+    }
+ }
 
 
   

@@ -8007,7 +8007,7 @@ p, a {
   -webkit-box-shadow: -2px 2px 5px 3px #bdbdbd;
   -moz-box-shadow: -2px 2px 5px 3px #bdbdbd;
   box-shadow: -2px 2px 5px 3px #bdbdbd;
-  z-index: 2; }
+  z-index: 21; }
   @media (min-width: 768px) {
     .subir {
       bottom: 50px; } }
@@ -8315,11 +8315,25 @@ p, a {
     color: #0b5998; }
 
 #inf_detalle {
-  margin-top: 7%; }
+  margin-top: 38%; }
+  @media (min-width: 768px) {
+    #inf_detalle {
+      margin-top: 14%; } }
+  @media (min-width: 992px) {
+    #inf_detalle {
+      margin-top: 7%; } }
   #inf_detalle .compartir {
     position: absolute;
     margin-left: 54%;
-    margin-top: 2%; }
+    margin-top: 46%; }
+    @media (min-width: 768px) {
+      #inf_detalle .compartir {
+        margin-left: 79%;
+        margin-top: 12%; } }
+    @media (min-width: 992px) {
+      #inf_detalle .compartir {
+        margin-left: 53%;
+        margin-top: 4%; } }
   #inf_detalle .conteedor_general {
     display: flex;
     justify-content: space-between;
@@ -8331,7 +8345,11 @@ p, a {
       #inf_detalle .conteedor_general .cont_list .cont_titulo {
         margin-right: 0px;
         padding-right: 0px;
-        list-style: none; }
+        list-style: none;
+        position: absolute; }
+        @media (min-width: 768px) {
+          #inf_detalle .conteedor_general .cont_list .cont_titulo {
+            position: initial; } }
         #inf_detalle .conteedor_general .cont_list .cont_titulo .cont_titulo::after {
           position: absolute;
           top: 50%;
@@ -8366,7 +8384,18 @@ p, a {
                   font-size: 16px; }
       #inf_detalle .conteedor_general .cont_list .con_detalle_inform {
         margin-right: 0px;
-        list-style: none; }
+        list-style: none;
+        position: absolute;
+        margin-top: 26%;
+        margin-left: 2%; }
+        @media (min-width: 768px) {
+          #inf_detalle .conteedor_general .cont_list .con_detalle_inform {
+            margin-top: 82px;
+            margin-left: -5%; } }
+        @media (min-width: 992px) {
+          #inf_detalle .conteedor_general .cont_list .con_detalle_inform {
+            margin-top: -6px;
+            margin-left: 25%; } }
         #inf_detalle .conteedor_general .cont_list .con_detalle_inform .lista_style {
           margin-bottom: 0;
           margin: 0;
@@ -8375,19 +8404,28 @@ p, a {
         #inf_detalle .conteedor_general .cont_list .con_detalle_inform .info_inmueble {
           display: flex;
           list-style: none;
-          margin-left: 0%;
-          padding: 41px; }
+          margin-left: 0%; }
           @media (min-width: 768px) {
             #inf_detalle .conteedor_general .cont_list .con_detalle_inform .info_inmueble {
               display: flex;
-              list-style: none; } }
+              list-style: none;
+              padding: 41px; } }
           #inf_detalle .conteedor_general .cont_list .con_detalle_inform .info_inmueble li {
             margin-right: 0.5em; }
       #inf_detalle .conteedor_general .cont_list .cont_precio {
         padding-right: 0;
         margin-right: 0;
         list-style: none;
-        margin-top: -22px; }
+        position: absolute;
+        margin-top: 19%; }
+        @media (min-width: 768px) {
+          #inf_detalle .conteedor_general .cont_list .cont_precio {
+            margin-top: 14%;
+            left: 41%; } }
+        @media (min-width: 992px) {
+          #inf_detalle .conteedor_general .cont_list .cont_precio {
+            margin-top: 1%;
+            left: 54%; } }
         #inf_detalle .conteedor_general .cont_list .cont_precio .precio_style {
           margin-bottom: 0px;
           color: #0b5998;
@@ -8399,8 +8437,17 @@ p, a {
       padding: 0;
       list-style-type: none;
       list-style: none;
-      margin-top: 0%;
-      margin-right: 2%; }
+      margin-top: 44%;
+      margin-right: 2%;
+      position: absolute; }
+      @media (min-width: 768px) {
+        #inf_detalle .conteedor_general .cont_compart {
+          left: 49%;
+          margin-top: 2%; } }
+      @media (min-width: 992px) {
+        #inf_detalle .conteedor_general .cont_compart {
+          left: 77%;
+          margin-top: 2%; } }
       #inf_detalle .conteedor_general .cont_compart .tamaño_redes {
         margin-right: 38px;
         display: inline-block;
@@ -8439,7 +8486,12 @@ p, a {
   margin-top: 8%; }
 
 .cont_caract {
-  margin-top: 2%; }
+  margin-top: 2%;
+  margin-bottom: 12px; }
+  @media (min-width: 768px) {
+    .cont_caract {
+      margin-left: 0%;
+      margin-bottom: 0px; } }
 
 .property {
   margin-bottom: 10px;
@@ -8466,14 +8518,72 @@ p, a {
   text-align: left;
   padding: 0%; }
 
+.cont_mapa {
+  margin-top: 21%; }
+  @media (min-width: 768px) {
+    .cont_mapa {
+      margin-top: -2%; } }
+  @media (min-width: 992px) {
+    .cont_mapa {
+      margin-top: 0%; } }
+
+.margin_internas {
+  margin-left: 7%; }
+
 .cont_externas {
   margin-bottom: 12px;
-  position: absolute;
-  margin-top: 46%;
+  margin-top: -5%;
   padding: 7%; }
+  @media (min-width: 768px) {
+    .cont_externas {
+      margin-top: -7%;
+      left: 51%; } }
+  @media (min-width: 992px) {
+    .cont_externas {
+      margin-top: -29%;
+      left: -2%; } }
 
 .separador_siminlares {
   margin-top: 21px; }
+
+#carousel_slider .container {
+  margin-top: 51%; }
+  @media (min-width: 768px) {
+    #carousel_slider .container {
+      margin-top: 8%; } }
+  @media (min-width: 992px) {
+    #carousel_slider .container {
+      margin-top: 3%; } }
+
+@media (min-width: 768px) {
+  .cont_caracter {
+    margin-left: 51%;
+    margin-top: 2%; } }
+@media (min-width: 992px) {
+  .cont_caracter {
+    position: initial;
+    margin-left: 0%;
+    margin-top: 0%; } }
+
+@media (min-width: 768px) {
+  .cont_internas {
+    margin-left: 51%; } }
+@media (min-width: 992px) {
+  .cont_internas {
+    position: inherit;
+    margin-left: 0px;
+    margin-left: 0%; } }
+
+.container_alrededor {
+  margin-left: 7%; }
+  @media (min-width: 768px) {
+    .container_alrededor {
+      margin-top: -1%;
+      margin-left: 54%; } }
+  @media (min-width: 992px) {
+    .container_alrededor {
+      margin-left: 51%;
+      margin-top: -24%; } }
 
 #carousel_inicio .carousel-item {
   animation-name: zoom;
