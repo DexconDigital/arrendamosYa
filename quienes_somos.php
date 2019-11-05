@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 contenedor_texto">
                     <p class=""><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0] ?></p>
                     <p><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][1] ?> <?php echo $texto_quienes_somos['quienes_somos']['parrafos'][2] ?> <?php echo $texto_quienes_somos['quienes_somos']['parrafos'][3] ?> <?php echo $texto_quienes_somos['quienes_somos']['parrafos'][4] ?></p>
                 </div>
@@ -68,7 +68,7 @@
                             <div class="col-lg-6">
                                 <h2 class="text-center mb-4 margen_text"> <strong><?php echo $texto_quienes_somos['mision']['titulo'] ?></strong></h2>
                                 <div class="text-center">
-                                    <div class="container mt-4">
+                                    <div class="container cont_mision mt-4">
                                         <p class="texto"><?php echo $texto_quienes_somos['mision'][0] ?></p>
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@
                         <div class="col-xl-3 col-md-2 col-2">
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-10 col-md-3 col-4 text-center ">
+                            <div class="col-xl-10 col-md-3 col-12 text-center ">
                                 <i class="fas fa-sign"></i>
                                 <h4><strong><?php echo $texto_servicios['arrendamientos']['titulo'] ?></strong></h4>
                             </div>
@@ -167,7 +167,7 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-10 col-md-3 col-4 text-center">
+                            <div class="col-xl-10 col-md-3 col-12 text-center">
                                 <i class="fas fa-tags"></i>
                                 <h4><strong><?php echo $texto_servicios['ventas']['titulo'] ?></strong></h4>
                             </div>
@@ -183,7 +183,7 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-10 col-md-3 col-4 text-center">
+                            <div class="col-xl-10 col-md-3 col-12 text-center">
                                 <i class="fas fa-balance-scale"></i>
                                 <h4><strong><?php echo $texto_servicios['avaluos']['titulo'] ?></strong></h4>
                             </div>
@@ -202,7 +202,7 @@
                         <div class="col-xl-3 col-md-2 col-2">
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-10 col-md-3 col-4 text-center ">
+                            <div class="col-xl-10 col-md-3 col-12 text-center ">
                                 <i class="fas fa-user-tie"></i>
                                 <h4><strong><?php echo $texto_servicios['administracion']['titulo'] ?></strong></h4>
                             </div>
@@ -218,7 +218,7 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10 cont_hipoteca">
-                            <div class="col-xl-10 col-md-3 col-4 text-center">
+                            <div class="col-xl-10 col-md-3 col-12 text-center">
                                 <i class="fas fa-hand-holding-usd"></i>
                                 <h4><strong><?php echo $texto_servicios['hipotecas']['titulo'] ?></strong></h4>
                             </div>
@@ -234,11 +234,12 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10 cont_juridica">
-                            <div class="col-xl-10 col-md-3 col-4 text-center">
+                            <div class="col-xl-10 col-md-3 col-12 text-center">
                                 <i class="fas fa-gavel"></i>
+                                <h4><strong><?php echo $texto_servicios['asesoria_juridica']['titulo'] ?></strong></h4>
                             </div>
                             <div>
-                                <h4><strong><?php echo $texto_servicios['asesoria_juridica']['titulo'] ?></strong></h4>
+                              
                             </div>
                             <!--<div class="margen_serv" style=" text-align: justify;">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...<a href="servicios.php#"> Ver más</a> </p>
