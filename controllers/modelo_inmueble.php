@@ -118,7 +118,7 @@ function modelo_inmueble_listar($r)
         echo
             '<div class="row mb-5">
             <div class="col-md-6 ">
-                <a class="cont_img_inmuebles" href="detalle_inmueble.php?co='.$codigo.'"><img src="' . $imagen . '" alt=""></a>
+                <a class="cont_img_inmuebles" href="detalle_inmueble.php?co='.$codigo.'"><img src="' . $imagen . '"></a>
             </div>
             <div class="col-md-6 ">
 

@@ -8172,12 +8172,12 @@ p, a {
       #cont_inmuebles .cont_ficha {
         padding-left: 3%; } }
   #cont_inmuebles img {
-    object-fit: contain;
-    width: 104%;
-    height: 100%;
-    padding-left: 20px;
+    object-fit: cover;
+    width: 100%;
+    padding-left: 37px;
     padding-right: 20px;
-    margin-top: 14px; }
+    margin-top: 14px;
+    height: 232px; }
     @media (min-width: 768px) {
       #cont_inmuebles img {
         object-fit: cover;
