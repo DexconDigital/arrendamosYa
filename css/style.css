@@ -8034,8 +8034,8 @@ p, a {
   @media (min-width: 768px) {
     #mision_vision_obj img {
       width: 100%;
-      margin-left: 18%;
-      width: 70%; } }
+      margin-left: 0%;
+      width: 100%; } }
 #mision_vision_obj .texto {
   text-align: justify; }
 #mision_vision_obj .margen_text {
@@ -8083,11 +8083,6 @@ p, a {
     #imagen_cont .cont_img_estadis {
       margin-top: 0%; } }
 
-@media (min-width: 768px) {
-  .cont_hipoteca {
-    position: absolute;
-    margin-top: -66%;
-    margin-left: 13%; } }
 @media (min-width: 992px) {
   .cont_hipoteca {
     margin-top: 0%;
@@ -8097,7 +8092,7 @@ p, a {
   .cont_juridica {
     position: absolute;
     margin-left: 122%;
-    margin-top: -67%; } }
+    margin-top: -77%; } }
 @media (min-width: 992px) {
   .cont_juridica {
     margin-top: 0%;
@@ -8119,13 +8114,23 @@ p, a {
   position: absolute; }
 
 .margen_top {
-  margin-top: 5%; }
+  margin-top: -4%; }
 
 .contenedor_texto {
   padding: 8%; }
 
 .cont_mision {
   padding: 0%; }
+
+@media (min-width: 768px) {
+  .contenedor_descrip {
+    margin-top: -7%; } }
+
+.espacio_botton {
+  margin-bottom: 0%; }
+  @media (min-width: 768px) {
+    .espacio_botton {
+      margin-bottom: 9%; } }
 
 #cont_inmuebles {
   margin-top: 32%; }

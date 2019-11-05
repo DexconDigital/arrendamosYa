@@ -28,9 +28,9 @@
 }
 .cont_hipoteca{
     @include media-breakpoint-up(md){
-    position: absolute;
-    margin-top: -66%;
-    margin-left: 13%;
+    
+    
+    
     }
     @include media-breakpoint-up(lg){
     margin-top: 0%;
@@ -42,7 +42,7 @@
    @include media-breakpoint-up(md){
     position: absolute;
     margin-left: 122%;
-    margin-top: -67%;
+    margin-top: -77%;
    }
     @include media-breakpoint-up(lg){
         margin-top: 0%;
@@ -68,7 +68,7 @@
    position: absolute;
   }
   .margen_top{
-      margin-top: 5%;
+      margin-top: -4%;
   }
   .contenedor_texto{
     padding: 8%;
@@ -76,4 +76,17 @@
   .cont_mision{
     padding: 0%;
   }
+  .contenedor_descrip{
+    @include media-breakpoint-up(md){
+        margin-top: -7%;
+    }
+    
+  }
 
+  .espacio_botton{
+    margin-bottom: 0%;
+    @include media-breakpoint-up(md){
+        margin-bottom: 9%;
+    }
+    
+  }

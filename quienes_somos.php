@@ -60,9 +60,9 @@
         </section>
         
         <section id="mision_vision_obj" class="mt-4 wow bounceIn" data-wow-duration="2s">
-            <div class="container">
+            <div class="container contenedor_descrip">
 
-                <div class="col-lg-12 col-md-4 mb-4">
+                <div class="col-lg-12 col-md-12 mb-4">
                     <div class=" container banner_estadi">
                         <div class="row">
                             <div class="col-lg-6">
@@ -73,14 +73,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 espacio_botton">
                                 <img src="images/mision.jpg" alt="">
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-4 margen_top">
+                <div class="col-lg-12 col-md-12 margen_top">
                     <div class=" container banner_estadi">
                         <div class="row">
                             <div class="col-lg-6">
@@ -97,10 +97,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-4  margen_top">
+                <div class="col-lg-12 col-md-12  margen_top">   
                     <div class=" container banner_estadi">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 espacio_botton">
                                 <h2 class="text-center mb-4 margen_text_obj"> <strong><?php echo $texto_quienes_somos['objetivos']['titulo'] ?></strong></h2>
                                 <div class="text-center">
                                     <div class="container mt-4">
@@ -108,13 +108,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 espacio_botton">
                                 <img src="images/objetivos.jpg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-4 margen_top">
+                <div class="col-lg-12 col-md-12 margen_top">
                     <div class=" container banner_estadi">
                         <div class="row">
                             <div class="col-lg-6 cont_valores">
@@ -151,7 +151,7 @@
                         <div class="col-xl-3 col-md-2 col-2">
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-10 col-md-3 col-12 text-center ">
+                            <div class="col-xl-10 col-md-12 col-12 text-center ">
                                 <i class="fas fa-sign"></i>
                                 <h4><strong><?php echo $texto_servicios['arrendamientos']['titulo'] ?></strong></h4>
                             </div>
@@ -167,7 +167,7 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-10 col-md-3 col-12 text-center">
+                            <div class="col-xl-10 col-md-12 col-12 text-center">
                                 <i class="fas fa-tags"></i>
                                 <h4><strong><?php echo $texto_servicios['ventas']['titulo'] ?></strong></h4>
                             </div>
@@ -183,7 +183,7 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-10 col-md-3 col-12 text-center">
+                            <div class="col-xl-10 col-md-12 col-12 text-center">
                                 <i class="fas fa-balance-scale"></i>
                                 <h4><strong><?php echo $texto_servicios['avaluos']['titulo'] ?></strong></h4>
                             </div>
@@ -202,7 +202,7 @@
                         <div class="col-xl-3 col-md-2 col-2">
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-10 col-md-3 col-12 text-center ">
+                            <div class="col-xl-10 col-md-12 col-12 text-center ">
                                 <i class="fas fa-user-tie"></i>
                                 <h4><strong><?php echo $texto_servicios['administracion']['titulo'] ?></strong></h4>
                             </div>
@@ -218,7 +218,7 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10 cont_hipoteca">
-                            <div class="col-xl-10 col-md-3 col-12 text-center">
+                            <div class="col-xl-10 col-md-12 col-12 text-center">
                                 <i class="fas fa-hand-holding-usd"></i>
                                 <h4><strong><?php echo $texto_servicios['hipotecas']['titulo'] ?></strong></h4>
                             </div>
@@ -234,9 +234,9 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10 cont_juridica">
-                            <div class="col-xl-10 col-md-3 col-12 text-center">
+                            <div class="col-xl-10 col-md-12 col-12 text-center">
                                 <i class="fas fa-gavel"></i>
-                                <h4><strong><?php echo $texto_servicios['asesoria_juridica']['titulo'] ?></strong></h4>
+                                <h4><strong><?php echo $texto_servicios['asesoria_juridica']['titulo'] ?></strong></h4> 
                             </div>
                             <div>
                               
