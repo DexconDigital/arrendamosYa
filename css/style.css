@@ -7970,8 +7970,7 @@ p, a {
   text-decoration: none; }
 
 .politicas {
-  margin-left: 93px;
-  margin-top: -38px; }
+  margin-top: -16px; }
   @media (min-width: 768px) {
     .politicas {
       margin-left: 0px;
@@ -8330,7 +8329,7 @@ p, a {
     color: #0b5998; }
 
 #inf_detalle {
-  margin-top: 38%; }
+  margin-top: 46%; }
   @media (min-width: 768px) {
     #inf_detalle {
       margin-top: 14%; } }
@@ -8339,8 +8338,8 @@ p, a {
       margin-top: 7%; } }
   #inf_detalle .compartir {
     position: absolute;
-    margin-left: 54%;
-    margin-top: 46%; }
+    margin-left: 47%;
+    margin-top: 42%; }
     @media (min-width: 768px) {
       #inf_detalle .compartir {
         margin-left: 79%;
@@ -8401,7 +8400,7 @@ p, a {
         margin-right: 0px;
         list-style: none;
         position: absolute;
-        margin-top: 26%;
+        margin-top: 29%;
         margin-left: 2%; }
         @media (min-width: 768px) {
           #inf_detalle .conteedor_general .cont_list .con_detalle_inform {
@@ -8432,7 +8431,7 @@ p, a {
         margin-right: 0;
         list-style: none;
         position: absolute;
-        margin-top: 19%; }
+        margin-top: 23%; }
         @media (min-width: 768px) {
           #inf_detalle .conteedor_general .cont_list .cont_precio {
             margin-top: 14%;
@@ -8452,7 +8451,7 @@ p, a {
       padding: 0;
       list-style-type: none;
       list-style: none;
-      margin-top: 44%;
+      margin-top: 53%;
       margin-right: 2%;
       position: absolute; }
       @media (min-width: 768px) {

@@ -1,5 +1,5 @@
 #inf_detalle{
-    margin-top: 38%;
+    margin-top: 46%;
     @include media-breakpoint-up(md){
     margin-top: 14%;
     }
@@ -8,8 +8,8 @@
         }
     .compartir{
     position: absolute;
-    margin-left: 54%;
-    margin-top: 46%;
+    margin-left: 47%;
+    margin-top: 42%;
     @include media-breakpoint-up(md){
         margin-left: 79%;
         margin-top: 12%;
@@ -92,7 +92,7 @@
                 margin-right: 0px;
                 list-style: none;
                 position: absolute;
-                margin-top: 26%;
+                margin-top: 29%;
                 margin-left: 2%;
                 @include media-breakpoint-up(md){
                     margin-top: 82px;
@@ -134,7 +134,7 @@
                 margin-right: 0;
                 list-style: none;
                 position: absolute;
-                margin-top: 19%;
+                margin-top: 23%;
                 @include media-breakpoint-up(md){
                     margin-top: 14%;
                    left: 41%
@@ -163,7 +163,7 @@
             padding: 0;
             list-style-type: none;
             list-style: none;
-            margin-top: 44%;
+            margin-top: 53%;
             margin-right: 2%;
             position: absolute;
             @include media-breakpoint-up(md){

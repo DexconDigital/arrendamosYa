@@ -146,7 +146,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                         
                         if (isset($r['fotos'])) {
                             
-                                for ($i = 0; $i < count($r['fotos']); $i++) {
+                                for ($i = 1; $i < count($r['fotos']); $i++) {
                                 echo ' <div class="swiper-slide">
                                         <figure class="slide-bgimg" style="background-image:url(' . $r['fotos'][$i]['foto'] . ')">
                                           <img src="' . $r['fotos'][$i]['foto'] . '" class="entity-img" />
@@ -188,7 +188,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                         <?php
                         if (isset($r['fotos'])) {
                             
-                            for ($i = 1; $i < count($r['fotos']); $i++) {
+                            for ($i = 2; $i < count($r['fotos']); $i++) {
                                 echo ' <div class="swiper-slide">
                                         <figure class="slide-bgimg" style="background-image:url(' . $r['fotos'][$i]['foto'] . ')">
                                           <img src="' . $r['fotos'][$i]['foto'] . '" class="entity-img" />
@@ -372,8 +372,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
     <!-- *******************Scripts********************* -->
     <?php include 'layout/archivosfooter.php' ?>
     <script src="js/slick.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
-    <script src="./js/corrousel.js"></script>
+    
 
     <!-- mapa del inmueble -->
     <script src="mapas/leaflet.js" crossorigin=""></script>
