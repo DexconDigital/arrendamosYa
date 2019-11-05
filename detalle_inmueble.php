@@ -9,7 +9,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php
     $page = 'Detalle Inmueble';
-   
+    include 'layout/archviosheader.php';
     ?>
 
 
@@ -27,7 +27,6 @@ require 'controllers/detalleInmuebleController.php'; ?>
 
     <!--link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>-->
     <link rel="stylesheet" href="css/swiper.min.css" class="rel">
-    <?php  include 'layout/archviosheader.php'; ?>
     <link rel="stylesheet" href="mapas/leaflet.css" crossorigin="" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
