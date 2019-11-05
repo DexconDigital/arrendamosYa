@@ -30,7 +30,7 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6 cont_img_estadis">
-                            <img src="images/no_image.png" alt="">
+                            <img src="images/Logo.png" alt="">
                             <p class="mt-5"></p>
 
                         </div>
@@ -157,9 +157,9 @@
                             <div>
                                 <h4><strong><?php echo $texto_servicios['arrendamientos']['titulo'] ?></strong></h4>
                             </div>
-                            <div class="margen_serv" style=" text-align: justify;">
+                            <!--<div class="margen_serv" style=" text-align: justify;">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...<a href="servicios.php#"> Ver más</a> </p>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     <!--Cuadro ventas -->
@@ -168,15 +168,15 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-12 col-md-3 col-4 text-center">
+                            <div class="col-xl-10 col-md-3 col-4 text-center">
                                 <i class="fas fa-tags"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['ventas']['titulo'] ?></strong></h4>
                             </div>
-                            <div class="margen_serv" style=" text-align: justify;">
+                            <!--<div class="margen_serv" style=" text-align: justify;">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...<a href="servicios.php#"> Ver más</a> </p>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     <!--Cuadro Avaluos -->
@@ -185,15 +185,15 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10">
-                            <div class="col-xl-12 col-md-3 col-4 text-center">
+                            <div class="col-xl-10 col-md-3 col-4 text-center">
                                 <i class="fas fa-balance-scale"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['avaluos']['titulo'] ?></strong></h4>
                             </div>
-                            <div class="margen_serv" style=" text-align: justify;">
+                            <!--<div class="margen_serv" style=" text-align: justify;">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...<a href="servicios.php#"> Ver más</a> </p>
-                            </div>
+                            </div>-->
 
                         </div>
 
@@ -211,9 +211,9 @@
                             <div>
                                 <h4><strong><?php echo $texto_servicios['administracion']['titulo'] ?></strong></h4>
                             </div>
-                            <div class="margen_serv" style=" text-align: justify;">
+                            <!--<div class="margen_serv" style=" text-align: justify;">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...<a href="servicios.php#"> Ver más</a> </p>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     <!--Cuadro hipotecas -->
@@ -222,15 +222,15 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10 cont_hipoteca">
-                            <div class="col-xl-12 col-md-3 col-4 text-center">
+                            <div class="col-xl-10 col-md-3 col-4 text-center">
                                 <i class="fas fa-hand-holding-usd"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['hipotecas']['titulo'] ?></strong></h4>
                             </div>
-                            <div class="margen_serv" style=" text-align: justify;">
+                            <!--<div class="margen_serv" style=" text-align: justify;">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...<a href="servicios.php#"> Ver más</a> </p>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     <!--Cuadro asesoria_juridica -->
@@ -239,15 +239,15 @@
 
                         </div>
                         <div class="col-xl-9 col-md-10 col-10 cont_juridica">
-                            <div class="col-xl-12 col-md-3 col-4 text-center">
+                            <div class="col-xl-10 col-md-3 col-4 text-center">
                                 <i class="fas fa-gavel"></i>
                             </div>
                             <div>
                                 <h4><strong><?php echo $texto_servicios['asesoria_juridica']['titulo'] ?></strong></h4>
                             </div>
-                            <div class="margen_serv" style=" text-align: justify;">
+                            <!--<div class="margen_serv" style=" text-align: justify;">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...<a href="servicios.php#"> Ver más</a> </p>
-                            </div>
+                            </div>-->
 
                         </div>
 
