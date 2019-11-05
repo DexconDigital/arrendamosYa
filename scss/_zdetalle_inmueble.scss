@@ -288,8 +288,9 @@
         left: 51%;
     }
     @include media-breakpoint-up(lg){
-        margin-top: -37%;
-        left: -2%;
+    margin-top: 44%;
+    left: -2%;
+    position: absolute;
     }
   }
  .separador_siminlares{
@@ -338,7 +339,7 @@
     }
     @include media-breakpoint-up(lg){
         margin-left:51%;
-        margin-top: -24%;
+        margin-top: 6%;
     }
  }
 

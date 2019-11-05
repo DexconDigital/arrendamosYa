@@ -319,7 +319,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                 <?php
                                 if (count($r['caracteristicasAlrededores']) > 0) {
                                     echo
-                                        '<div class="col-md-6 container_alrededor" style="margin-bottom: 12px;">
+                                        '<div class="col-md-6 container_alrededor" style="margin-bottom: 112px;">
                                     <h4 class="Lineas_separadora"><strong>Características de los alrededores</strong></h4>
                                         <ul>';
                                     for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {

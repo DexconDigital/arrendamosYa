@@ -8540,8 +8540,9 @@ p, a {
       left: 51%; } }
   @media (min-width: 992px) {
     .cont_externas {
-      margin-top: -29%;
-      left: -2%; } }
+      margin-top: 44%;
+      left: -2%;
+      position: absolute; } }
 
 .separador_siminlares {
   margin-top: 21px; }
@@ -8583,7 +8584,7 @@ p, a {
   @media (min-width: 992px) {
     .container_alrededor {
       margin-left: 51%;
-      margin-top: -24%; } }
+      margin-top: 6%; } }
 
 #carousel_inicio .carousel-item {
   animation-name: zoom;
