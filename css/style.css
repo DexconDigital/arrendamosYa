@@ -7616,9 +7616,15 @@ body .body {
 
 .swiper-container {
   width: 80%;
-  height: 100vh;
+  height: 60vh;
   float: right;
   transition: opacity .6s ease, transform .3s ease; }
+  @media (min-width: 768px) {
+    .swiper-container {
+      height: 75vh; } }
+  @media (min-width: 992px) {
+    .swiper-container {
+      height: 100vh; } }
   .swiper-container.nav-slider {
     width: 20%;
     padding-right: 5px; }
@@ -8116,7 +8122,7 @@ p, a {
   margin-top: -4%; }
 
 .contenedor_texto {
-  padding: 8%; }
+  padding: 6%; }
 
 .cont_mision {
   padding: 0%; }
