@@ -31,20 +31,20 @@
             </div>
         </section>
 
-        <section id="info_inmo" class="wow fadeInRightBig" data-wow-duration="2s"> 
+        <section id="info_inmo" class="wow fadeInRightBig" data-wow-duration="2s">
             <div class="container ">
                 <div class="row col-md-12">
                     <div class="col-md-6">
                         <h4> <strong>Contáctanos</strong></h4>
                         <p class="mt-3"> Puedes contactarnos a través de una llamada, un mensaje por
-                            WhatsApp o visitarnos de <?php echo $datos_contacto ['horario']['horario'] ?>.</p>
+                            WhatsApp o visitarnos de <?php echo $datos_contacto['horario']['horario'] ?>.</p>
                         <ul id="info_list">
                             <li><i class="fas fa-map-marker-alt m-2 color_ubi"></i> <strong><?php echo $datos_contacto['direccion']['direccion'] ?></strong></li>
                             <li><a href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2  color_wapp "></i> <strong><?php echo $datos_contacto['correo']['correo'] ?></strong></a></li>
                             <li><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?>"><i class="fas fa-phone m-2 color_tel "></i> <strong><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></strong></a> </li>
                             <li><a href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt m-2 color_cel "></i> <strong><?php echo $datos_contacto['celular']['imprimir'] ?></strong></a></li>
                             <li><a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2  color_wapp "></i> <strong><?php echo $datos_contacto['whatsapp']['imprimir'] ?></strong></a></li>
-                            
+
                         </ul>
                         <ul class="row redes">
                             <li> <a href="<?php echo $redes_sociales['facebook']['link'] ?>" target="_blank"><i class="fab fa-facebook-f mr-2 color_face "></i></a></li>
@@ -54,34 +54,36 @@
                     </div>
                     <div class="col-md-6">
                         <h4 class="mb-3"> <strong>Formulario de Contacto</strong></h4>
-                        <div class="col-lg-12 col-md-12 col-12 p-0">
+                        <form action="email/enviarCorreo.php" method="post">
+                            <div class="col-lg-12 col-md-12 col-12 p-0">
+                                <div class="form-group">
+                                    <input type="text"  name="nombre"  class="form-control" placeholder="Nombre y Apellido" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-12 p-0">
+                                <div class="form-group">
+                                    <input type="text"name="telefono"  class="form-control" placeholder="Teléfono / Celular" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-12 p-0">
+                                <div class="form-group">
+                                    <input type="email" name="correo" class="form-control" placeholder="Correo" required>
+                                </div>
+                            </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nombre y Apellido">
+                                <textarea cols="25" rows="5" name="mensaje" class="textarea form-control tamaño_tex_area" placeholder="Mensaje" required></textarea>
                             </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-12 p-0">
+                            <div class="col-md-12 col-12 politica p-0">
+                                <div class="custom-control custom-checkbox mb-4" >
+                                    <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy" required>
+                                    <label class="custom-control-label" for="defaultContactFormCopy">Confimo que he leído, entendido y acepto la<a class="color_poltica" href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf" download="Politica de tratamiento de infromación.pdf"> <strong>política de tratamiento de datos personales.</strong></a></label>
+                                </div>
+                            </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Teléfono / Celular">
+                                <button type="submit" class="btn btn-primary col-5">Enviar</button>
+                                <!-- Debe llegar a  gerente@arrendamosya.com con copia a juanescudero624@hotmail.com -->
                             </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-12 p-0">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Correo">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea cols="25" rows="5" class="textarea form-control tamaño_tex_area" placeholder="Mensaje"></textarea>
-                        </div>
-                        <div class="col-md-12 col-12 politica p-0">
-                            <div class="custom-control custom-checkbox mb-4">
-                                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                                <label class="custom-control-label" for="defaultContactFormCopy">Confimo que he leído, entendido y acepto la<a class="color_poltica" href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf" download="Politica de tratamiento de infromación.pdf"> <strong>política de tratamiento de datos personales.</strong></a></label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                        <button type="submit" class="btn btn-primary col-5">Enviar</button>
-                        <!-- Debe llegar a  gerente@arrendamosya.com con copia a juanescudero624@hotmail.com -->
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

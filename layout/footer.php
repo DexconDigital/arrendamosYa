@@ -21,20 +21,20 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    
                         <div class="modal-body">
                             <form action="email/consignainmueble.php" class="row" method="post">
                                 <div class="form-group col-12">
-                                    <input type="text" placeholder="Nombre" name="nombre" class="form-control" requiered="">
+                                    <input type="text" placeholder="Nombre" name="nombre" class="form-control" requiered>
                                 </div>
                                 <div class="form-group col-12">
-                                    <input type="mail" placeholder="Correo" name="email" class="form-control" required="">
+                                    <input type="mail" placeholder="Correo" name="email" class="form-control" required>
                                 </div>
                                 <div class="form-group col-12">
-                                    <input type="Telefono" placeholder="Teléfono" name="telefono" class="form-control" requiered="">
+                                    <input type="Telefono" placeholder="Teléfono" name="telefono" class="form-control" requiered>
                                 </div>
                                 <div class="form-group col-12">
-                                    <select class="form-control select_color" name="transaccion" requiered="">
+                                    <select class="form-control select_color" name="transaccion" requiered>
                                         <option selected="" disabled="">Tipo de Transacción</option>
                                         <option value="arriendo">Arriendo</option>
                                         <option value="arriendo/venta">Arriendo/venta</option>
@@ -43,7 +43,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-12">
-                                    <select class="form-control select_color" id="tipo_inm" name="tipo_inm" requiered="">
+                                    <select class="form-control select_color" id="tipo_inm" name="tipo_inm" requiered>
                                         <option selected="" disabled="">Tipo de Inmueble</option>
                                         <option value="Apartamento">Apartamento</option>
                                         <option value="Casa">Casa</option>
@@ -60,24 +60,24 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-12">
-                                    <input type="number" placeholder="Valor" name="valor" class="form-control" requiered="">
+                                    <input type="number" placeholder="Valor" name="valor" class="form-control" requiered>
                                 </div>
                                 <div class="form-group col-12">
-                                    <input type="number" placeholder="Área" name="area" class="form-control" requiered="">
+                                    <input type="number" placeholder="Área" name="area" class="form-control" requiered>
                                 </div>
                                 <div class="form-group col-12">
-                                    <input type="text" placeholder="Ciudad" name="ciudad" class="form-control" requiered="">
+                                    <input type="text" placeholder="Ciudad" name="ciudad" class="form-control" requiered>
                                 </div>
                                 <div class="form-group col-12">
-                                    <input type="text" placeholder="Dirección" name="direccion" class="form-control" requiered="">
+                                    <input type="text" placeholder="Dirección" name="direccion" class="form-control" requiered>
                                 </div>
                                 <div class="form-group col-12">
-                                    <textarea name="mensaje" placeholder="Mensajes" class="form-control" id="mensaje" rows="6" requiered=""></textarea>
+                                    <textarea name="mensaje" placeholder="Mensajes" class="form-control" id="mensaje" rows="6" requiered></textarea>
                                 </div>
                                 <div class="form-group col-12">
                                     <div class="form-check custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="ejemplo">
-                                        <input type="checkbox" class="form-check-input" id="ejemplo" requiered="">
+                                        <input type="checkbox" class="form-check-input" id="ejemplo" requiered>
                                        <label class="custom-control-label" for="ejemplo">Confimo que he leído, entendido y acepto la<a class="color_poltica" href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf" download="Politica de tratamiento de infromación.pdf"> <strong>política de tratamiento de datos personales.</strong></a></label>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
                             </form>
 
                         </div>
-                    </form>
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn color_gris" data-dismiss="modal">Cancelar</button>
