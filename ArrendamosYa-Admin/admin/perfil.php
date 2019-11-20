@@ -2,7 +2,7 @@
 require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
-$user =$_SESSION["usuarioactual"];
+$user = $_SESSION["usuarioactual"];
 $con = Conect();
 $qry = "SELECT * FROM `usuarios` WHERE id_user = '$user'";
 $sql = mysqli_query($con, $qry);
@@ -13,7 +13,8 @@ $usuario =  mysqli_fetch_array($sql);
     input[type]:focus {
         border-color: #24619c;
          !important;
-         box-shadow: 0 1px 1px rgb(36, 97, 156)inset, 0 0 8px #24619c; !important;
+        box-shadow: 0 1px 1px rgb(36, 97, 156)inset, 0 0 8px #24619c;
+         !important;
          !important;
         outline: 0 none;
     }
@@ -24,14 +25,19 @@ $usuario =  mysqli_fetch_array($sql);
 
     }
 
+    .container {
+        background-color: white;
+    }
+
+
     .color_boton:hover {
         color: white;
     }
 
-    .conct_botton{
-    text-align: center;
-    
-}
+    .conct_botton {
+        text-align: center;
+
+    }
 </style>
 <div class="container">
     <div class="row justify-content-center">
