@@ -135,25 +135,25 @@ require 'controllers/noticiasController.php';
         </section>
 
         <section id="destacadas" class="wow  bounceInRight" data-wow-duration="2s">
-            <div class="container mt-3 ">
+            <div class="container mt-3 p-0">
                 <div class="col-12 text-center">
                     <h2>Propiedades Destacadas</h2>
                 </div>
-                <div class="col-md-12 mt-4">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <!-- traer inmuebles destacados -->
-                            <?php
-                            if (is_array($api)) {
-                                inmuebles_destacados($api);
-                            } else {
-                                echo '<h2 class="text-center" >No tiene Inmuebles Destacados</h2>';
-                            }
-                            ?>
-                        </div>
+                <div class="col-md-12 mt-4 d-flex">
 
-
+                    <div class="d-flex justify-content-around row">
+                        <!-- traer inmuebles destacados -->
+                        <?php
+                        if (is_array($api)) {
+                            inmuebles_destacados($api);
+                        } else {
+                            echo '<h2 class="text-center" >No tiene Inmuebles Destacados</h2>';
+                        }
+                        ?>
                     </div>
+
+
+
                 </div>
             </div>
         </section>
@@ -330,7 +330,7 @@ require 'controllers/noticiasController.php';
 
         <hr style=" width:100%">
 
-        <section id="inmobiliaria_historia" class="wow bounce" data-wow-duration="2s" >
+        <section id="inmobiliaria_historia" class="wow bounce" data-wow-duration="2s">
             <div class="container col-md-2 mb-3 cont_img">
                 <img src="images/Logo.png" class="card-img-top" alt="...">
             </div>

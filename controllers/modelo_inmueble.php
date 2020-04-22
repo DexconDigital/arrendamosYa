@@ -32,19 +32,35 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
 
         echo
             '
-            <div class="card" style="width: 22rem;">
-                                <a  href="detalle_inmueble.php?co=' . $codigo . '">
-                                    <img src="' . $imagen . '" class="card-img-top" alt="...">
+            <div class="w-100 col-12 col-md-6 col-xl-4 col-lg-4">
+                                <div class="card overflow-hidden">
+
+                                <a class="position-relative"  href="detalle_inmueble.php?co=' . $codigo . '">
+
+                                <div style="height: 400px;">
+                                    <img style="height:100%;" src="' . $imagen . '" class="card-img-top" alt="...">
+                                </div>
+
+                                <span style="top:10px; left:10px;" class="position-absolute codigo_inmueble">Código:' . $codigo . '</span>
+                                <span style="bottom:10px; right:10px;" class="d-flex align-items-center justify-content-center position-absolute precio_inmueble_destacadas">' . $precio . '</span>
+
                                 </a>
-                                <span class="codigo_inmueble">Código:' . $codigo . '</span>
-                                <span class="precio_inmueble_destacadas">' . $precio . '</span>
+
                                 <div class="card-body">
+
                                     <h5 class="card-title">' . $tipo_inmueble . ' en ' . $gestion . '</h5>
                                     <div class="col-12 row">
                                        <i class="fas fa-map-marker-alt mr-2">
                                         </i>
                                         <p> ' . $barrio . ', ' . $ciudad . ' </p>
+                                        
+                             
+
+
+                               
                                     </div>
+
+
                                     <div class="col-md-12 row ">
                                         <ul class="info_inmueble mt-3">
                                             <li class="container_li">
@@ -68,7 +84,8 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
 
 
                                 </div>
-                            </div>
+                                </div>
+             </div>
             ';
     }
 }
@@ -118,7 +135,7 @@ function modelo_inmueble_listar($r)
         echo
             '<div class="row mb-5">
             <div class="col-md-6 ">
-                <a class="cont_img_inmuebles" href="detalle_inmueble.php?co='.$codigo.'"><img src="' . $imagen . '"></a>
+                <a class="cont_img_inmuebles" href="detalle_inmueble.php?co=' . $codigo . '"><img src="' . $imagen . '"></a>
             </div>
             <div class="col-md-6 ">
 
@@ -155,7 +172,7 @@ function modelo_inmueble_listar($r)
                                             <span>' . $garaje . '</span>
                                         </li>
                                     </ul>
-                                    <a class="btn rounded-0 col-12 botoon_inmueble" type="button" href="detalle_inmueble.php?co='.$codigo.'">Ver Más</a>
+                                    <a class="btn rounded-0 col-12 botoon_inmueble" type="button" href="detalle_inmueble.php?co=' . $codigo . '">Ver Más</a>
                                 </div>
                             </div>
                         </div>
@@ -243,5 +260,3 @@ function console_log($output, $with_script_tags = true)
     }
     echo $js_code;
 }
-
-
