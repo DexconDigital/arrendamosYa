@@ -85,7 +85,7 @@ require 'controllers/detalleInmuebleController.php'; ?>
                                     </li>
                                     <li class="">
                                         <i class="fa fa-bed icono_inmueble mr-1"></i>
-                                        <span>3</span>
+                                        <span><?php echo $alcobas; ?></span>
                                     </li>
                                     <li class="">
                                         <i class="fa fa-car icono_inmueble mr-1"></i>

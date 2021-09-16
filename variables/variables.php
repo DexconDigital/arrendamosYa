@@ -48,8 +48,8 @@ $datos_contacto = [
 		"icono" => "fas fa-map-marker-alt",
 	],
 	"telefono_fijo" => [
-		"link"=> "0342328421",
-		"imprimir" => "+57(4) 232 8421",
+		"link"=> "6042328421",
+		"imprimir" => "(604) 232 8421",
 		"icono" => "fas fa-phone",
 	],
 	"celular" => [
